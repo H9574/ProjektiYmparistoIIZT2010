@@ -14,4 +14,6 @@ Most important ingrediments of JAMK-IT product line
   * Slack
   * Trello
   * CommonKey
-  * 
+  * Zapier
+  * SlackBot
+  *
