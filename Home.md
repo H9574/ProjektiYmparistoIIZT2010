@@ -16,4 +16,6 @@ Most important ingrediments of JAMK-IT product line
   * CommonKey
   * Zapier
   * SlackBot
-  *
+  * NinjaMock
+  * FluidUI
+  * Lucidchart
