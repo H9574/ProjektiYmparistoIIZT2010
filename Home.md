@@ -9,7 +9,7 @@ Jokainen opiskelijaryhmä kopio wiki-sivustot omaan github projekti koodi reposi
 | [Projektin tilannekatsaus](projektin-status) | MikkiHiiri | Valmiina  | | |
 | [Tyoajan seuranta](tyoajan-seuranta) | Rambo2 | | | |
 | [Projektiryhmän esittely](projektiryhman-esittely) | GaruWeikko | | | |
-| [Aikatalut](projektin-aikataulu) | HessuHopo | | | |
+| [Aikataulu & resurssointi](projektin-aikataulu-ja-resurssointi) | HessuHopo | | | |
 | [Projektisuunnitelma](projektisuunnitelma) | GaruWeikko, MikkiHiiri | | | |
 | [Kommunikaatiosuunnitelma](projektin-kommunikaatiosuunnitelma) | | | | |
 | [Projektin riskit](projektin-riskienhallintasuunnitelma) | | | | |
