@@ -1,0 +1,1 @@
+Hae tähän pohja esim. https://github.com/JAMK-IT/TT0S0100-software-desing-and-testing/blob/master/riskien-hallintasuunnitelma.md
