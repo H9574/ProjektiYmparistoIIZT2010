@@ -1,0 +1,1 @@
+Yhteistyösopimuksen pohja https://drive.google.com/drive/folders/0B-hPgXTXfK9ERWpUU1N4S1JKZEk
