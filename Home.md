@@ -6,7 +6,7 @@ Jokainen opiskelijaryhmä kopio wiki-sivustot omaan github projekti koodi reposi
 | Mitä | Kuka vastaa | Muuta | Huomiota | 
 |:----:|:----:|:-----:|:-----:|:-----:|
 | [Aikataulut](projektin-aikataulu) | HessuHopo | | | |
-| [Projektin tilannekatsaus](projektin-status) | MikkiHiiri | | | |
+| [Projektin tilannekatsaus](projektin-status) | MikkiHiiri | Valmiina  | | |
 | [Tyoajan seuranta](tyoajan-seuranta) | Rambo2 | | | |
 | [Projektiryhmän esittely](projektiryhman-esittely) | GaruWeikko | | | |
 | [Aikatalut](projektin-aikataulu) | HessuHopo | | | |
