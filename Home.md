@@ -5,12 +5,12 @@ Jokainen opiskelijaryhmä kopio wiki-sivustot omaan github projekti koodi reposi
 
 | Mitä | Kuka vastaa | Muuta | Huomiota | 
 |:----:|:----:|:-----:|:-----:|:-----:|
-| [Aikataulut](projektin-aikataulu) | | | | |
-| [Projektin tilannekatsaus](projektin-status) | | | | |
-| [Tyoajan seuranta](tyoajan-seuranta) | | | | |
-| [Projektiryhmän esittely](projektiryhman-esittely) | | | | |
-| [Aikatalut](projektin-aikataulu) | | | | |
-| [Projektisuunnitelma](projektisuunnitelma) | | | | |
+| [Aikataulut](projektin-aikataulu) | HessuHopo | | | |
+| [Projektin tilannekatsaus](projektin-status) | MikkiHiiri | | | |
+| [Tyoajan seuranta](tyoajan-seuranta) | Rambo2 | | | |
+| [Projektiryhmän esittely](projektiryhman-esittely) | GaruWeikko | | | |
+| [Aikatalut](projektin-aikataulu) | HessuHopo | | | |
+| [Projektisuunnitelma](projektisuunnitelma) | GaruWeikko, MikkiHiiri | | | |
 | [Kommunikaatiosuunnitelma](projektin-kommunikaatiosuunnitelma) | | | | |
 | [Projektin riskit](projektin-riskienhallintasuunnitelma) | | | | |
 | [Projektisopimus](projektisopimukset) | | | | |
