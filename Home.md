@@ -17,7 +17,7 @@ Jokainen opiskelijaryhmä kopio wiki-sivustot omaan github projekti repositorioo
 | [Vaatimusmääritelmä](vaatimusmaarittely) | | | |
 | [Suunnittelu & Toteutusdokumentaatiot](suunnittelu-ja-toteutus) | | | |
 | [Käyttöohjeet & dokumentaatio](installation-guide) | | | |
-| [Projektityön tarkistuslista](projekti-tarkistuslista] | | | |
+| [Projektin tarkistuslista](projektin-tarkistuslista) | | | |
 
 
 
