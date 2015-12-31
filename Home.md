@@ -17,7 +17,7 @@ Jokainen opiskelijaryhmä kopio wiki-sivustot omaan github projekti koodi reposi
 | [Projektin riskit](projektin-riskienhallintasuunnitelma) | | | | |
 | [Projektisopimus](projektisopimukset) | | | | |
 | [Vaatimusmääritelmä](vaatimusmaarittely) | | | | |
-| [Suunnittelu & Toteutusdokumentaatiot](suunnittelu-ja-toteutus) | | | | |
+| [Tekninendokumentaatio](suunnittelu-ja-toteutus) | | | | |
 | [Käyttöohjeet & dokumentaatio](installation-guide) | | | | |
 | [Projektin tarkistuslista](projektin-tarkistuslista) | | | | |
 
