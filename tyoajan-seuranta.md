@@ -5,6 +5,8 @@
 | HessuHopo | 3.1.2016 | 3 h | templaattin sivujen käpistelylä |
 | HessuHopo | 4.1.2016 | 3 h | Projektisuunnitelman tekoa |
 | HessuHopo | 5.1.2016 | 3 h | templaattin sivujen käpistelylä |
+| Tunteja yhteensä | =  | 90 h | - |
+
 
 | Nimi | Päivä | Aika | Tehtävät |
 |:----:|:----:|:----:|:----:|
@@ -13,3 +15,4 @@
 | JopoMan | 3.1.2016 | 3 h | templaattin sivujen käpistelylä |
 | JopoMan | 4.1.2016 | 3 h | JQuery harjoittelua |
 | JopoMan | 5.1.2016 | 3 h | MySQL JQuery db integration |
+| Tunteja yhteensä | =  | 90 h | - |
