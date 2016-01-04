@@ -1,6 +1,6 @@
 # Esimerkki pohja
 
-  * [Esimerkki 1](https://github.com/JAMK-IT/TT0S0100-software-desing-and-testing/blob/master/projektisuunnitelman-pohja.md)
+  * [Kopioi tämä pohja](https://github.com/JAMK-IT/TT0S0100-software-desing-and-testing/blob/master/projektisuunnitelman-pohja.md)
 
 
 
