@@ -14,9 +14,9 @@ Jokainen opiskelijaryhmä kopio wiki-sivustot omaan github projekti koodi reposi
 | [Aikataulu & resurssointi](projektin-aikataulu-ja-resurssointi) | HessuHopo | | | |
 | [Projektisuunnitelma](projektisuunnitelma) | GaruWeikko, MikkiHiiri | | | |
 | [Viestintäsuunnitelma](https://github.com/JAMK-IT/TT0S0100-software-desing-and-testing/blob/master/viestintasuunnitelma.md) | | | | |
-| [Projektin riskit](projektin-riskienhallintasuunnitelma) | | | | |
-| [Projektisopimus](projektisopimukset) | | | | |
-| [Vaatimusmääritelmä](vaatimusmaarittely) | | | | |
+| [Projektin riskit](https://github.com/JAMK-IT/TT0S0100-software-desing-and-testing/blob/master/riskihallintasuunnitelman-pohja.md) | | | | |
+| [Projektisopimus](https://github.com/JAMK-IT/TT0S0100-software-desing-and-testing/blob/master/projektisopimuksen-pohja.md) | | | | |
+| [Vaatimusmääritelmä](https://github.com/JAMK-IT/TT0S0100-software-desing-and-testing/blob/master/vaatimusmaarittelu-pohja.md) | | | | |
 | [Tekninendokumentaatio](suunnittelu-ja-toteutus) | | | | |
 | [Käyttöohjeet & dokumentaatio](installation-guide) | | | | |
 | [Projektin tarkistuslista](https://github.com/JAMK-IT/IIZP2010-system-project/wiki/projektin-tarkistuslista) | | | | |
