@@ -19,7 +19,7 @@ Jokainen opiskelijaryhmä kopio wiki-sivustot omaan github projekti koodi reposi
 | [Vaatimusmääritelmä](vaatimusmaarittely) | | | | |
 | [Tekninendokumentaatio](suunnittelu-ja-toteutus) | | | | |
 | [Käyttöohjeet & dokumentaatio](installation-guide) | | | | |
-| [Projektin tarkistuslista](projektin-tarkistuslista) | | | | |
+| [Projektin tarkistuslista](https://github.com/JAMK-IT/IIZP2010-system-project/wiki/projektin-tarkistuslista) | | | | |
 
 
 
