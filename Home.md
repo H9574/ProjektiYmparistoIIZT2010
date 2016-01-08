@@ -13,7 +13,7 @@ Jokainen opiskelijaryhmä kopio wiki-sivustot omaan github projekti koodi reposi
 | [Projektiryhmän esittely](projektiryhman-esittely) | GaruWeikko | | | |
 | [Aikataulu & resurssointi](projektin-aikataulu-ja-resurssointi) | HessuHopo | | | |
 | [Projektisuunnitelma](projektisuunnitelma) | GaruWeikko, MikkiHiiri | | | |
-| [Kommunikaatiosuunnitelma](projektin-kommunikaatiosuunnitelma) | | | | |
+| [Viestintäsuunnitelma](https://github.com/JAMK-IT/TT0S0100-software-desing-and-testing/blob/master/viestintasuunnitelma.md) | | | | |
 | [Projektin riskit](projektin-riskienhallintasuunnitelma) | | | | |
 | [Projektisopimus](projektisopimukset) | | | | |
 | [Vaatimusmääritelmä](vaatimusmaarittely) | | | | |
