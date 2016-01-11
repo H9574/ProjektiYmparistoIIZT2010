@@ -1,7 +1,7 @@
 ### projektiympäristön esimerkki  2016
 
 Tämä wiki sisältää esimerkin projektityöympäristöstä, jota voidaan käyttää esim. IZP2010-kurssin aikana.
-Jokainen opiskelijaryhmä kopio wiki-sivustot omaan github projekti koodi repositorioonsa/ wikiin. 
+Jokainen opiskelijaryhmä kopio wiki-sivustot omaan github projekti koodi repositorioonsa/ wikiin
 
 ![](https://dl.dropboxusercontent.com/u/14115930/focus-productline.png)
 
