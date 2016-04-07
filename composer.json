@@ -1,6 +1,5 @@
-{
+
 "scripts":{"post-install-cmd":["php artisan clear complited",
 							   "php artisan optimize",
 							   "chmod -R 777 app/storage"]
 		  }
-}
