@@ -122,10 +122,11 @@ if ($arpa==2){
         $laake = settype($Vahvuus[rand(0,1)], "integer");
         $TarvittavaAntoNopeus = rand(4, 12);
 
-        echo "Anaesthesia is maintained to a patient weighting $Paino kg. The drug’s required administration rate is $TarvittavaAnt$
+        echo "Anaesthesia is maintained to a patient weighting $Paino kg. The drug’s required administration rate is $TarvittavaAntoNopeus mg/kg/h.
+				The drug's strenght is $laake mg/ml. What is the administration rate in unit ml/h?";
         $Ratkaisu = $Vastaus->LaskeAntoNopeus($Paino, $laake, $TarvittavaAntoNopeus);
         echo "<br> Vastaus: $Ratkaisu";
-        echo "Lääkkeen vahvuus: $Vahvuus mg/ml <br> Potilaan paino: $Paino ml <br> Anto nopeus potilaalle: $TarvittavaAntoNopeus mg$
+        echo "Lääkkeen vahvuus: $Vahvuus mg/ml <br> Potilaan paino: $Paino ml <br> Anto nopeus potilaalle: $TarvittavaAntoNopeus mg/kg/h";
 }if ($arpa==5){
         $KuivaAine = rand(1, 9)*100;
         $Laimennus = rand (10, 50);
