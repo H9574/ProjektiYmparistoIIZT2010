@@ -1,3 +1,17 @@
+<?php
+// Create connection
+try{
+	$db = new PDO('mysql:host=178.62.246.71;dbname=database-iizp2010-2;charset=utf8',
+              'teamh', 'iqo!Ib%nqr35a');
+	$db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}catch (PDOException $ex){
+	echo "Errmsg to enduser!<hr>\n";
+	echo "CatchErrMsg: " . $ex->getMessage() . "<hr>\n";
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -122,11 +136,10 @@ if ($arpa==2){
         $laake = settype($Vahvuus[rand(0,1)], "integer");
         $TarvittavaAntoNopeus = rand(4, 12);
 
-        echo "Anaesthesia is maintained to a patient weighting $Paino kg. The drug’s required administration rate is $TarvittavaAntoNopeus mg/kg/h.
-				The drug's strenght is $laake mg/ml. What is the administration rate in unit ml/h?";
+        echo "Anaesthesia is maintained to a patient weighting $Paino kg. The drug’s required administration rate is $TarvittavaAnt$
         $Ratkaisu = $Vastaus->LaskeAntoNopeus($Paino, $laake, $TarvittavaAntoNopeus);
         echo "<br> Vastaus: $Ratkaisu";
-        echo "Lääkkeen vahvuus: $Vahvuus mg/ml <br> Potilaan paino: $Paino ml <br> Anto nopeus potilaalle: $TarvittavaAntoNopeus mg/kg/h";
+        echo "Lääkkeen vahvuus: $Vahvuus mg/ml <br> Potilaan paino: $Paino ml <br> Anto nopeus potilaalle: $TarvittavaAntoNopeus mg$
 }if ($arpa==5){
         $KuivaAine = rand(1, 9)*100;
         $Laimennus = rand (10, 50);
