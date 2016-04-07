@@ -1,0 +1,3 @@
+<?php
+echo "Oikea vastaus";
+?>
