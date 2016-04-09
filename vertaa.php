@@ -17,9 +17,8 @@ if ($Oppilas == $Ratkaisu){
 else{
         header("Location: vaara.php");
 }*/
-
+$Vastaus = $_POST["vastaus"];
 class Tarkistus($Ratkaisu){
-	$Vastaus = $_POST["vastaus"];
 	if ($Vastaus == $Ratkaisu){
         header("Location: oikea.php");
 }

@@ -236,13 +236,15 @@ if ($arpa==2){
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "Luku: $Normi";
 }
-Tarkistus($Ratkaisu);
 ?>
                                         <br>
                                         <form action="vertaa.php" method="post">
                                         Answer: <input type="text" name="vastaus">
                                         <br><input type="submit" value="Give to the patient">
                                         </form>
+										<?php
+										Tarkistus($Ratkaisu);
+										?>
                                         </content>
                                 </article>
         </div>
