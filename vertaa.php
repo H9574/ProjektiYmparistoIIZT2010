@@ -1,5 +1,5 @@
 <?php
-require_once 'Laskuja.class.php';
+/*require_once 'Laskuja.class.php';
 $Vastaus = new Laskuja();
 $Oppilas = $_POST["ruisku"];
 
@@ -16,5 +16,15 @@ if ($Oppilas == $Ratkaisu){
 }
 else{
         header("Location: vaara.php");
+}*/
+
+class Tarkistus($Ratkaisu){
+	$Vastaus = $_POST["vastaus"];
+	if ($Vastaus == $Ratkaisu){
+        header("Location: oikea.php");
+}
+else{
+        header("Location: vaara.php");
+}
 }
 ?>
