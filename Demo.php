@@ -244,12 +244,8 @@ if ($arpa==2){
                                         <br><input type="submit" value="Give to the patient">
                                         </form>
 										<?php
-											if ($vastaus == $Ratkaisu){
-												header("Location: oikea.php");
-											}
-											else{
-												header("Location: vaara.php");
-											}
+										require_once 'Vertaa.class.php';
+										Tarkistus($Ratkaisu, $vastaus);
 										?>
                                         </content>
                                 </article>
