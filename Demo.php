@@ -238,12 +238,18 @@ if ($arpa==2){
 }
 ?>
                                         <br>
-                                        <form action="vertaa.php" method="post">
+                                        <!--form action="vertaa.php" method="post"-->
+										<form>
                                         Answer: <input type="text" name="vastaus">
                                         <br><input type="submit" value="Give to the patient">
                                         </form>
 										<?php
-										Tarkistus($Ratkaisu);
+											if ($vastaus == $Ratkaisu){
+												header("Location: oikea.php");
+											}
+											else{
+												header("Location: vaara.php");
+											}
 										?>
                                         </content>
                                 </article>
