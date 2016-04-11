@@ -1,5 +1,10 @@
 <?php
-require_once("db-init.php");
+try{
+	require_once("db-init.php");
+}catch(PDOException $ex){
+	echo "ErrMsg to enduser!<hr>\n";
+    echo "CatchErrMsg: " . $ex->getMessage() . "<hr>\n";
+}
 ?>
 
 <!DOCTYPE html>
