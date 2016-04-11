@@ -31,6 +31,7 @@ try{
         tausta.src = "MedicineRoom.png"
         var bitmap = new createjs.Bitmap(tausta);
         stage.addChild(bitmap);
+
         var circle = new createjs.Shape();
         circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 50);
         circle.x = 100;
@@ -83,7 +84,7 @@ try{
 
 <?php
 require_once 'Laskuja.class.php';
-$arpa = 3 /* rand(1, 17) */;
+$arpa = 9 /* rand(1, 17) */;
 $Vastaus = new Laskuja();
 $RoomaMuunnos = new Roomalaiset();
 //Pysyviä muuttujia kaikkiin tehtäviin
@@ -169,9 +170,11 @@ if ($arpa==2){
 			<input type='text' name='vastaus' placeholder='enter the answer as mcg' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==8){
-        $KuivaAine = rand(1, 9)*100;
+        $KuivaAine = rand(1, 6);
         $Liuos = rand(1, 6)*10;
-        echo '<p>Harjoitus 7 prosentteina';
+        echo "The medicine concentrate is prepared by reconstituting $KuivaAine mg of remifentanil 
+		dry powder into $Liuos ml of saline. The concentrate is then diluted into an infusion by 
+		adding saline ad 40 ml. What is the remifentanil concentrate’s strength in %?";
         $Ratkaisu = $Vastaus->LaskeYksikössäProsentti($KuivaAine, $Liuos);
         echo "<br> Vastaus: $Ratkaisu % </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
@@ -179,9 +182,17 @@ if ($arpa==2){
 			<input type='text' name='vastaus' placeholder='enter the answer as %' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==9){
-        $KuivaAine = rand(1, 9)*100;
-        $Laimennus = rand(1, 6)*10;
-        echo '<p>Harjoitus 8 ';
+		$KuivaAineTaulu = array(0, 1, 2, 5);
+        $KuivaAine = intval($KuivaAineTaulu[rand(0, 3)]);
+		if($KuivaAine == 1){ $LaimennusTaulu = array(0, 50, 40, 20);
+        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]); }
+		if($KuivaAine == 2){ $LaimennusTaulu = array(0, 100, 80, 40);
+        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]); }
+		if($KuivaAine == 3){ $LaimennusTaulu = array(0, 250, 200, 100);
+        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]); }
+        echo "The medicine concentrate is prepared by reconstituting $KuivaAine mg of remifentanil 
+		dry powder into $KuivaAine ml of saline. The concentrate is then diluted into an infusion by 
+		adding saline ad $Laimennus ml. What is the diluted infusion’s strength in unit mg/ml?";
         $Ratkaisu = $Vastaus->LaskeVahvuus($KuivaAine, $Laimennus);
         echo "<br>Vastaus: $Ratkaisu mg/ml </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
