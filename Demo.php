@@ -236,7 +236,7 @@ if ($arpa==2){
         <canvas id="demoCanvas" width="1388" height="694"></canvas>
         <div id="makkara" style="width:300px;height:200px;border:1px solid #000;">
                 <?php
-					$stmt = $db->query(SELECT COUNT(*) FROM brand;);
+					$stmt = $db->query('SELECT COUNT(*) FROM brand');
 				?>
         </div>
 </div>
