@@ -1,3 +1,10 @@
+<?php
+$db = new PDO('mysql:host=178.62.246.71;dbname=database-iizp2010-2;charset=utf8',
+              'teamh', 'iqo!Ib%nqr35a');
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,9 +19,9 @@
     var stage = new createjs.Stage("demoCanvas");
         createjs.Ticker.addEventListener("tick", handleTick);
         function handleTick(event) {
-    stage.update();
-    if (!event.paused) {
-        // Actions carried out when the Ticker is not paused.
+		stage.update();
+		if (!event.paused) {
+				stage.update();
                 }
         }
         // piirretään pelin tausta
@@ -233,3 +240,6 @@ if ($arpa==2){
 </body>
 
 </html>
+
+
+
