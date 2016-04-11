@@ -1,6 +1,6 @@
 <?php
 	$db_host = '178.62.246.71';
-	$db_name = "database-iizp2010-2";
+	$db_name = "drugbank_01";
 	$db_user = "teamh";
 	$db_pass = 'iqo!Ib%nqr35a';
 	
