@@ -36,10 +36,12 @@ try{
         circle.x = 100;
         circle.y = 100;
         stage.addChild(circle);
+		
         stage.enableMouseOver();
         circle.addEventListener("click", function(event) { alert("clicked"); })
         circle.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
         circle.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+		
         var d = document.getElementById('makkara');
         d.style.position = "absolute";
         d.style.left = "50px";
@@ -51,7 +53,7 @@ try{
         //z.style.left = "150px";
         //z.style.top = "100px";
         //d.style.z-index = 1;
-        stage.style.position = "absolute";
+        stage.style.position = "centered";
         //stage.style.z-index = 0;
   }
 </script>
