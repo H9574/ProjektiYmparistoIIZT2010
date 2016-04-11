@@ -182,17 +182,9 @@ if ($arpa==2){
 			<input type='text' name='vastaus' placeholder='enter the answer as %' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==9){
-		$KuivaAineTaulu = array(0, 1, 2, 5);
-        $KuivaAine = intval($KuivaAineTaulu[rand(0, 3)]);
-		if($KuivaAine == 1){ $LaimennusTaulu = array(0, 50, 40, 20);
+        $KuivaAine = 2;
+		$LaimennusTaulu = array(0, 100, 40, 80);
         $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]);
-		return $Laimennus;		}
-		if($KuivaAine == 2){ $LaimennusTaulu = array(0, 100, 80, 40);
-        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]); 
-		return $Laimennus;}
-		if($KuivaAine == 3){ $LaimennusTaulu = array(0, 250, 200, 100);
-        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]);
-		return $Laimennus;		}
         echo "The medicine concentrate is prepared by reconstituting $KuivaAine mg of remifentanil 
 		dry powder into $KuivaAine ml of saline. The concentrate is then diluted into an infusion by 
 		adding saline ad $Laimennus ml. What is the diluted infusion’s strength in unit mg/ml?";
@@ -203,43 +195,51 @@ if ($arpa==2){
 			<input type='text' name='vastaus' placeholder='enter an answer' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==10){
-        $Laake = rand(6, 30);
-        $Vahvuus = 25;
-        echo '<p>Harjoitus 9 ';
+        $Laake = rand(2, 80);
+        $Vahvuus = 50;
+        echo "Patient has been given $Laake ml of a fentanyl-based drug. The drug’s strength is 
+		$Vahvuus µg/ml. How much of the active ingredient, fentanyl, has the patient received?";
         $Ratkaisu = $Vastaus->LaskeSaatuLaake($Laake, $Vahvuus);
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
-			<input type='text' name='vastaus' placeholder='enter an answer' />
+			<input type='text' name='vastaus' placeholder='enter an answer as µg' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==11){
         $Laake = rand(1, 9);
         $Vahvuus = rand(1, 6)*10;
-        $Paino = rand(50, 100);
+        $Paino = rand(35, 50);
         $Injektioliuos = rand(1, 9);
         $Suolaliuos = rand(6, 20);
-        echo '<p>Harjoitus 10 ';
+        echo "Oxycodone hydrochloride injection solution with strength of $Vahvuus mg/ml is used for 
+		acute and difficult pain. The patient is a child weighting $Paino kg and he has been prescribed 
+		$Laake mg/kg of the active ingredient intravenously. You prepare the drug solution by taking 
+		$Injektioliuos ml of the oxycodone hydrochloride injection solution and adding $Suolaliuos ml of 
+		saline. How many ml of the solution do you give to the patient?";
         $Ratkaisu = $Vastaus->LaskeSaatuLiuos($Laake, $Vahvuus, $Paino, $Injektioliuos, $Suolaliuos);
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
-			<input type='text' name='vastaus' placeholder='enter an answer' />
+			<input type='text' name='vastaus' placeholder='enter the answer as ml' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==12){
         $KuivaAine = rand(2,20)*10;
         $Liuos = rand(1, 9);
-        echo '<p>Harjoitus 11 ';
+        echo "The stock solution is prepared by reconstituting $KuivaAine mg of dry powder 
+		into $Liuos ml of saline. What is the resulting stock solution’s strength in %?";
         $Ratkaisu = $Vastaus->LaskeYksikössäProsentti($KuivaAine, $Liuos);
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
-			<input type='text' name='vastaus' placeholder='enter an answer' />
+			<input type='text' name='vastaus' placeholder='enter the answer as %' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==13){
         $KuivaAine = rand(10, 20)*10;
         $Suolaliuos = rand(1, 15);
         $Maara = rand(10, 30)*10;
-        echo '<p>Harjoitus 12 ';
+        echo "The stock solution is prepared by reconstituting $KuivaAine mg of dry powder into 
+		$Suolaliuos ml of saline. How much stock solution do you get by using $Maara mg 
+		of dry powder?";
         $Ratkaisu = $Vastaus->LaskeMaara($KuivaAine, $Suolaliuos, $Maara);
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
@@ -249,18 +249,19 @@ if ($arpa==2){
 }if ($arpa==14){
         $Maara = rand(3, 5);
         $Vahvuus = rand(1, 6);
-        echo '<p>Harjoitus 13 ';
+        echo "The patient has been prescribed $Maara mg intramuscular injection of buprenorphine 
+		for pain. How many ml do you give, when the drug contains $Vahvuus mg/ml of the active ingredient?";
         $Ratkaisu = $Vastaus->LaskeSaatuMaara($Vahvuus, $Maara);
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
-			<input type='text' name='vastaus' placeholder='enter an answer' />
+			<input type='text' name='vastaus' placeholder='enter the answer as ml' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==15){
-        $KuivaAine = rand(1, 9)*100;
-        $Liuos = rand(1, 6)*10;
-        echo '<p>Harjoitus 7 ';
-        $Ratkaisu = $Vastaus->LaskeYksikössäMgMl($KuivaAine, $Liuos);
+        $Normi = rand(1, 500);
+        $Rooma = $RoomaMuunnos->MuunnaNormiRoomaksi($Normi);
+        echo "How much is $Rooma?";
+        $Ratkaisu = $RoomaMuunnos->MuunnaRoomaNormiksi($Rooma);
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -268,17 +269,7 @@ if ($arpa==2){
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==16){
         $Normi = rand(1, 500);
-        $Rooma = $RoomaMuunnos->MuunnaNormiRoomaksi($Normi);
-        echo '<p>Muuta Roomalainen luvuksi ';
-        $Ratkaisu = $RoomaMuunnos->MuunnaRoomaNormiksi($Rooma);
-        echo "<br> Vastaus: $Ratkaisu </p>";
-        echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
-			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
-			<input type='text' name='vastaus' placeholder='enter an answer' />
-			<input type='submit' value='Give to the patient' /></form>";
-}if ($arpa==17){
-        $Normi = rand(1, 500);
-        echo '<p>Muuta luku Roomalaiseksi ';
+        echo "What is $Normi in Roman numeral?";
         $Ratkaisu = $RoomaMuunnos->MuunnaNormiRoomaksi($Normi);
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
