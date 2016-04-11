@@ -1,11 +1,20 @@
 <?php
-try{
+/*try{
 	$db = new PDO('mysql:host=178.62.246.71;dbname=database-iizp2010-2;charset=utf8',
               'teamh', "iqo!Ib%nqr35a");
 	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 }catch(PDOException $ex){
 	echo "ErrMsg to enduser!<hr>\n";
 	echo "CatchErrMsg: " . $ex->getMessage() . "<hr>\n";
+}
+*/
+
+$link = mysql_connect("178.62.246.71", "teamh", "iqo!Ib%nqr35a")
+        or die("Tietokannan: " . mysql_error());
+if (!$link)
+{
+   echo ("Tietokannan avaamisessa tapahtui virhe.\n" . mysql_error());
+   exit;
 }
 ?>
 
