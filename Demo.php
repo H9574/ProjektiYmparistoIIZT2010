@@ -185,11 +185,14 @@ if ($arpa==2){
 		$KuivaAineTaulu = array(0, 1, 2, 5);
         $KuivaAine = intval($KuivaAineTaulu[rand(0, 3)]);
 		if($KuivaAine == 1){ $LaimennusTaulu = array(0, 50, 40, 20);
-        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]); }
+        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]);
+		return $Laimennus;		}
 		if($KuivaAine == 2){ $LaimennusTaulu = array(0, 100, 80, 40);
-        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]); }
+        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]); 
+		return $Laimennus;}
 		if($KuivaAine == 3){ $LaimennusTaulu = array(0, 250, 200, 100);
-        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]); }
+        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]);
+		return $Laimennus;		}
         echo "The medicine concentrate is prepared by reconstituting $KuivaAine mg of remifentanil 
 		dry powder into $KuivaAine ml of saline. The concentrate is then diluted into an infusion by 
 		adding saline ad $Laimennus ml. What is the diluted infusion’s strength in unit mg/ml?";
