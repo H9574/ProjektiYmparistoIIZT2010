@@ -83,7 +83,7 @@ try{
 
 <?php
 require_once 'Laskuja.class.php';
-$arpa = rand(1, 16);
+$arpa = 7;//rand(1, 16);
 $Vastaus = new Laskuja();
 $RoomaMuunnos = new Roomalaiset();
 //Pysyviä muuttujia kaikkiin tehtäviin
@@ -155,7 +155,8 @@ if ($arpa==2){
 			<input type='text' name='vastaus' placeholder='enter the answer as ml' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==7){
-        $Annos = rand(25, 200)/1000;
+		$AnnosTaulu = array(0, 0.025, 0.05, 0.075, 0.1, 0.15, 0.175, 0.2, 0.225, 0.275, 0.5, 1.75, 2);
+        $Annos = double($AnnosTaulu[rand(1, 12)]);
         $Paino = rand(50, 100);
         $Aika = rand(1, 4);
         echo "Remifentanil is meant to be used in general anaesthesia as an intravenous analgesic. 
