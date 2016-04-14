@@ -145,7 +145,7 @@ if ($arpa==2){
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==6){
         $KuivaAine = array(0, 250, 750, 1500);
-		$laake = intval($Vahvuus[rand(1,5)]);
+		$laake = intval($KuivaAine[rand(1,3)]);
         $KohdePro = rand (1, 10)/10;
         echo "With $laake mg of dry powder, how much saline will be needed for the resulting solution to have concentration of $KohdePro %?";
         $Ratkaisu = $Vastaus->LaskeNesteMaarasta($laake, $KohdePro)*10;
