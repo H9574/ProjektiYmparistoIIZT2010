@@ -31,7 +31,6 @@ try{
         tausta.src = "MedicineRoom.png"
         var bitmap = new createjs.Bitmap(tausta);
         stage.addChild(bitmap);
-
         var circle = new createjs.Shape();
         circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 50);
         circle.x = 100;
@@ -137,7 +136,6 @@ if ($arpa==2){
 	    $Vahvuus = array(0, 2, 4, 20, 25, 50);
 		$laake = intval($Vahvuus[rand(1,5)]);
         $KuivaAine = rand(1, 9)*100;
-
         echo "With $KuivaAine mg of dry powder, to how large volume do you need to reconstitute the drug into, for it to have strength of $laake mg/ml? ";
         $Ratkaisu = $Vastaus->LaskeNesteMaarasta($KuivaAine, $laake);
         echo "<br> Vastaus: $Ratkaisu</p>";
@@ -184,7 +182,7 @@ if ($arpa==2){
 }if ($arpa==9){
         $KuivaAine = 2;
 		$LaimennusTaulu = array(0, 100, 40, 80);
-        $Laimennus = intval($KuivaAineTaulu[rand(0, 3)]);
+        $Laimennus = intval($LaimennusTaulu[rand(1, 3)]);
         echo "The medicine concentrate is prepared by reconstituting $KuivaAine mg of remifentanil 
 		dry powder into $KuivaAine ml of saline. The concentrate is then diluted into an infusion by 
 		adding saline ad $Laimennus ml. What is the diluted infusion’s strength in unit mg/ml?";
@@ -192,7 +190,7 @@ if ($arpa==2){
         echo "<br>Vastaus: $Ratkaisu mg/ml </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
-			<input type='text' name='vastaus' placeholder='enter an answer' />
+			<input type='text' name='vastaus' placeholder='enter an answer as mg/ml' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==10){
         $Laake = rand(2, 80);
