@@ -93,7 +93,7 @@ $RoomaMuunnos = new Roomalaiset();
 		$InfuusioNopeus = rand(4, $Maksimi);
 		
 if ($arpa==1){
-        $Ratkaisu = $Vastaus->LaskeAnnostusMaksimi($Maksimi, $Aika);
+        $Ratkaisu = intval($Vastaus->LaskeAnnostusMaksimi($Maksimi, $Aika));
         echo "The drug’s dosage is $Minimi – $Maksimi ml/h, how much of it at most can you give in $Aika hours?";
         echo "<br> Vastaus: $Ratkaisu ml";
 		echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
@@ -104,7 +104,7 @@ if ($arpa==1){
 if ($arpa==2){
         $Aika = rand(1, 48);
         echo "The drug’s dosage is $Minimi – $Maksimi ml/h, how much of it at least must you give in $Aika hours?";
-        $Ratkaisu = $Vastaus->LaskeAnnostusMinimi($Minimi, $Aika);
+        $Ratkaisu = intval($Vastaus->LaskeAnnostusMinimi($Minimi, $Aika));
         echo "<br> Vastaus: $Ratkaisu ml";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -113,7 +113,7 @@ if ($arpa==2){
 }if ($arpa==3){
         $Ruisku = 50;
         echo "The drug’s dosage is $Minimi-$Maksimi ml/h, how many $Ruisku ml syringes does the patient need per $Aika hours with an infusion rate of $InfuusioNopeus ml/h?";
-        $Ratkaisu = $Vastaus->LaskeRuiskujenMaara($Aika, $Ruisku, $InfuusioNopeus);
+        $Ratkaisu = intval($Vastaus->LaskeRuiskujenMaara($Aika, $Ruisku, $InfuusioNopeus));
         echo "<br> Vastaus: $Ratkaisu kpl";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -126,7 +126,7 @@ if ($arpa==2){
         $TarvittavaAntoNopeus = rand(4, 12);
         echo "Anaesthesia is maintained to a patient weighting $Paino kg. The drug’s required administration rate is $TarvittavaAntoNopeus mg/kg/h.
 				The drug's strength is $laake mg/ml. What is the administration rate in unit ml/h?";
-        $Ratkaisu = $Vastaus->LaskeAntoNopeus($Paino, $laake, $TarvittavaAntoNopeus);
+        $Ratkaisu = intval($Vastaus->LaskeAntoNopeus($Paino, $laake, $TarvittavaAntoNopeus));
         echo "<br> Vastaus: $Ratkaisu";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -137,7 +137,7 @@ if ($arpa==2){
 		$laake = intval($Vahvuus[rand(1,5)]);
         $KuivaAine = rand(1, 9)*100;
         echo "With $KuivaAine mg of dry powder, to how large volume do you need to reconstitute the drug into, for it to have strength of $laake mg/ml? ";
-        $Ratkaisu = $Vastaus->LaskeNesteMaarasta($KuivaAine, $laake);
+        $Ratkaisu = intval($Vastaus->LaskeNesteMaarasta($KuivaAine, $laake));
         echo "<br> Vastaus: $Ratkaisu</p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -148,7 +148,7 @@ if ($arpa==2){
 		$laake = intval($KuivaAine[rand(1,3)]);
         $KohdePro = rand (1, 10)/10;
         echo "With $laake mg of dry powder, how much saline will be needed for the resulting solution to have concentration of $KohdePro %?";
-        $Ratkaisu = $Vastaus->LaskeNesteMaarasta($laake, $KohdePro)*10;
+        $Ratkaisu = intval($Vastaus->LaskeNesteMaarasta($laake, $KohdePro)*10);
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -161,7 +161,7 @@ if ($arpa==2){
         echo "Remifentanil is meant to be used in general anaesthesia as an intravenous analgesic. 
 		The patient, weighting $Paino kg, has been given a maintenance rate of $Annos mcg/kg/min. How much remifentanil does the patient get in total, 
 		if the infusion lasts for $Aika hours?";
-        $Ratkaisu = $Vastaus->LaskeNestePainosta($Annos, $Paino, $Aika*60);
+        $Ratkaisu = intval($Vastaus->LaskeNestePainosta($Annos, $Paino, $Aika*60));
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -173,7 +173,7 @@ if ($arpa==2){
         echo "The medicine concentrate is prepared by reconstituting $KuivaAine mg of remifentanil 
 		dry powder into $Liuos ml of saline. The concentrate is then diluted into an infusion by 
 		adding saline ad 40 ml. What is the remifentanil concentrate’s strength in %?";
-        $Ratkaisu = $Vastaus->LaskeYksikössäProsentti($KuivaAine, $Liuos);
+        $Ratkaisu = intval($Vastaus->LaskeYksikössäProsentti($KuivaAine, $Liuos));
         echo "<br> Vastaus: $Ratkaisu % </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -186,7 +186,7 @@ if ($arpa==2){
         echo "The medicine concentrate is prepared by reconstituting $KuivaAine mg of remifentanil 
 		dry powder into $KuivaAine ml of saline. The concentrate is then diluted into an infusion by 
 		adding saline ad $Laimennus ml. What is the diluted infusion’s strength in unit mg/ml?";
-        $Ratkaisu = $Vastaus->LaskeVahvuus($KuivaAine, $Laimennus);
+        $Ratkaisu = intval($Vastaus->LaskeVahvuus($KuivaAine, $Laimennus));
         echo "<br>Vastaus: $Ratkaisu mg/ml </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -197,7 +197,7 @@ if ($arpa==2){
         $Vahvuus = 50;
         echo "Patient has been given $Laake ml of a fentanyl-based drug. The drug’s strength is 
 		$Vahvuus µg/ml. How much of the active ingredient, fentanyl, has the patient received?";
-        $Ratkaisu = $Vastaus->LaskeSaatuLaake($Laake, $Vahvuus);
+        $Ratkaisu = intval($Vastaus->LaskeSaatuLaake($Laake, $Vahvuus));
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -214,7 +214,7 @@ if ($arpa==2){
 		$Laake mg/kg of the active ingredient intravenously. You prepare the drug solution by taking 
 		$Injektioliuos ml of the oxycodone hydrochloride injection solution and adding $Suolaliuos ml of 
 		saline. How many ml of the solution do you give to the patient?";
-        $Ratkaisu = $Vastaus->LaskeSaatuLiuos($Laake, $Vahvuus, $Paino, $Injektioliuos, $Suolaliuos);
+        $Ratkaisu = intval($Vastaus->LaskeSaatuLiuos($Laake, $Vahvuus, $Paino, $Injektioliuos, $Suolaliuos));
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -225,7 +225,7 @@ if ($arpa==2){
         $Liuos = rand(1, 9);
         echo "The stock solution is prepared by reconstituting $KuivaAine mg of dry powder 
 		into $Liuos ml of saline. What is the resulting stock solution’s strength in %?";
-        $Ratkaisu = $Vastaus->LaskeYksikössäProsentti($KuivaAine, $Liuos);
+        $Ratkaisu = intval($Vastaus->LaskeYksikössäProsentti($KuivaAine, $Liuos));
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -238,7 +238,7 @@ if ($arpa==2){
         echo "The stock solution is prepared by reconstituting $KuivaAine mg of dry powder into 
 		$Suolaliuos ml of saline. How much stock solution do you get by using $Maara mg 
 		of dry powder?";
-        $Ratkaisu = $Vastaus->LaskeMaara($KuivaAine, $Suolaliuos, $Maara);
+        $Ratkaisu = intval($Vastaus->LaskeMaara($KuivaAine, $Suolaliuos, $Maara));
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -249,7 +249,7 @@ if ($arpa==2){
         $Vahvuus = rand(1, 6);
         echo "The patient has been prescribed $Maara mg intramuscular injection of buprenorphine 
 		for pain. How many ml do you give, when the drug contains $Vahvuus mg/ml of the active ingredient?";
-        $Ratkaisu = $Vastaus->LaskeSaatuMaara($Vahvuus, $Maara);
+        $Ratkaisu = intval($Vastaus->LaskeSaatuMaara($Vahvuus, $Maara));
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
