@@ -221,11 +221,11 @@ if ($arpa==2){
 			<input type='text' name='vastaus' placeholder='enter the answer as ml' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==12){
-        $KuivaAine = rand(2,20)*10;
+        $KuivaAine = rand(2, 20)*10;
         $Liuos = rand(1, 9);
         echo "The stock solution is prepared by reconstituting $KuivaAine mg of dry powder 
 		into $Liuos ml of saline. What is the resulting stock solution’s strength in %?";
-        $Ratkaisu = intval($Vastaus->LaskeYksikössäProsentti($KuivaAine, $Liuos));
+        $Ratkaisu = $Vastaus->LaskeYksikössäProsentti($KuivaAine, $Liuos);
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
@@ -242,7 +242,7 @@ if ($arpa==2){
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
-			<input type='text' name='vastaus' placeholder='enter an answer' />
+			<input type='text' name='vastaus' placeholder='enter an answer as ml' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==14){
         $Maara = rand(3, 5);
@@ -272,7 +272,7 @@ if ($arpa==2){
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
-			<input type='text' name='vastaus' placeholder='enter an answer' />
+			<input type='text' name='vastaus' placeholder='enter an answer as number' />
 			<input type='submit' value='Give to the patient' /></form>";
 }
 ?>
