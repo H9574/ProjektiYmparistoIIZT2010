@@ -98,7 +98,7 @@ if ($arpa==1){
         echo "<br> Vastaus: $Ratkaisu ";
 		echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
-			<input type='text' name='vastaus' placeholder='enter an answer' />
+			<input type='text' name='vastaus' placeholder='enter an answer as ml' />
 			<input type='submit' value='Give to the patient' /></form>";
 }
 if ($arpa==2){
@@ -108,7 +108,7 @@ if ($arpa==2){
         echo "<br> Vastaus: $Ratkaisu ";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
-			<input type='text' name='vastaus' placeholder='enter an answer' />
+			<input type='text' name='vastaus' placeholder='enter an answer as ml' />
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==3){
         $Ruisku = 50;
@@ -172,7 +172,7 @@ if ($arpa==2){
         $Liuos = rand(1, 6)*10;
         echo "The medicine concentrate is prepared by reconstituting $KuivaAine mg of remifentanil 
 		dry powder into $Liuos ml of saline. The concentrate is then diluted into an infusion by 
-		adding saline ad 40 ml. What is the remifentanil concentrate’s strength in %?";
+		adding saline ad 40 ml. What is the remifentanil concentrate’s strength in % with the precision of one decimal?";
         $Ratkaisu = round($Vastaus->LaskeYksikössäProsentti($KuivaAine, $Liuos), 1);
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
@@ -249,8 +249,8 @@ if ($arpa==2){
         $Maara = rand(3, 5);
         $Vahvuus = rand(1, 6);
         echo "The patient has been prescribed $Maara mg intramuscular injection of buprenorphine 
-		for pain. How many ml do you give, when the drug contains $Vahvuus mg/ml of the active ingredient?";
-        $Ratkaisu = intval($Vastaus->LaskeSaatuMaara($Vahvuus, $Maara));
+		for pain. How many ml with the precision of two decimal do you give, when the drug contains $Vahvuus mg/ml of the active ingredient?";
+        $Ratkaisu = round($Vastaus->LaskeSaatuMaara($Vahvuus, $Maara), 2);
         echo "<br> Vastaus: $Ratkaisu </p>";
         echo "<h2>Player's answer</h2><form action='vertaa.php' method='post'>
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
