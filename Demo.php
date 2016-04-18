@@ -156,7 +156,7 @@ if ($arpa==2){
 			<input type='submit' value='Give to the patient' /></form>";
 }if ($arpa==7){
 		$AnnosTaulu = array(0, 0.025, 0.05, 0.075, 0.1, 0.15, 0.175, 0.2, 0.225, 0.275, 0.5, 1.75, 2);
-        $Annos = double($AnnosTaulu[rand(1, 12)]);
+        $Annos = floatval($AnnosTaulu[rand(1, 12)]);
         $Paino = rand(50, 100);
         $Aika = rand(1, 4);
         echo "Remifentanil is meant to be used in general anaesthesia as an intravenous analgesic. 
