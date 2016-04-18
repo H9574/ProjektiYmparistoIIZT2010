@@ -483,7 +483,7 @@ if ($arpa==2){
                 <?php
 					$stmt = $db->query('SELECT Burana FROM brand');
 					$row = $stmt->fetch(PDO::FETCH_ASSOC);
-					echo "{$row['Burana']}, {$row['Description']}<br>\n";
+					echo "{$row['Brand']}, {$row['Description']}<br>\n";
 					
 				?>
         </div>
