@@ -155,8 +155,8 @@ try{
 		
         var d = document.getElementById('makkara');
         d.style.position = "absolute";
-        d.style.left = "60px";
-        d.style.top = "1000px";
+        d.style.left = "80px";
+        d.style.top = "850px";
         d.style.opacity = 0;
         //d.style.z-index = 0;
         //var z = document.getElementById('juusto');
@@ -396,7 +396,7 @@ if ($arpa==2){
 
 <div id="isodiv">
         <canvas id="demoCanvas" width="1388" height="694"></canvas>
-        <div id="makkara" style="width:300px;height:200px;border:1px solid #000;">
+        <div id="makkara" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query('SELECT * FROM brand');
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
