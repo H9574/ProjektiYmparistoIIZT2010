@@ -287,8 +287,10 @@ if ($arpa==2){
         <canvas id="demoCanvas" width="1388" height="694"></canvas>
         <div id="makkara" style="width:300px;height:200px;border:1px solid #000;">
                 <?php
-					$stmt = $db->query('SELECT COUNT(*) FROM brand');
-					echo $stmt;
+					$stmt = $db->query('SELECT * FROM brand');
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "{$row['brand']}<br>\n";
+					}
 				?>
         </div>
 </div>
