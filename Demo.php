@@ -155,8 +155,8 @@ try{
 		
         var d = document.getElementById('makkara');
         d.style.position = "absolute";
-        d.style.left = "50px";
-        d.style.top = "800px";
+        d.style.left = "60px";
+        d.style.top = "1000px";
         d.style.opacity = 0;
         //d.style.z-index = 0;
         //var z = document.getElementById('juusto');
