@@ -289,7 +289,7 @@ if ($arpa==2){
                 <?php
 					$stmt = $db->query('SELECT COUNT(*) FROM brand');
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "{$row['brand']}<br>\n";
+						echo "{$row['Brand']}<br>\n";
 					}
 				?>
         </div>
