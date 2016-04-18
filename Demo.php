@@ -83,7 +83,7 @@ try{
 
 <?php
 require_once 'Laskuja.class.php';
-$arpa = 7;//rand(1, 16);
+$arpa = rand(1, 16);
 $Vastaus = new Laskuja();
 $RoomaMuunnos = new Roomalaiset();
 //Pysyviä muuttujia kaikkiin tehtäviin
