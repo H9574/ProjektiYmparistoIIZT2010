@@ -288,9 +288,7 @@ if ($arpa==2){
         <div id="makkara" style="width:300px;height:200px;border:1px solid #000;">
                 <?php
 					$stmt = $db->query('SELECT COUNT(*) FROM brand');
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "{$row['Brand']}<br>\n";
-					}
+					echo $stmt;
 				?>
         </div>
 </div>
