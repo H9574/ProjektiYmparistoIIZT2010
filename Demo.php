@@ -481,7 +481,7 @@ if ($arpa==2){
         </div>
 		<div id="burana" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
-					$stmt = $db->query('SELECT Substance FROM active_substance WHERE PrimaryKey = ANY (SELECT Substance FROM active_substances WHERE Brand = (SELECT PrimaryKey FROM brand WHERE brand = 'Burana'))');
+					$stmt = $db->query('SELECT Burana FROM brand');
 					$row = $stmt->fetch(PDO::FETCH_ASSOC);
 					echo $row;
 					
