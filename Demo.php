@@ -228,6 +228,11 @@ try{
         d.style.left = "80px";
         d.style.top = "850px";
         d.style.opacity = 0;
+		var b = document.getElementById('Burana');
+        b.style.position = "absolute";
+        b.style.left = "80px";
+        b.style.top = "850px";
+        b.style.opacity = 0;
         //d.style.z-index = 0;
         //var z = document.getElementById('juusto');
         //z.style.position = "absolute";
@@ -476,7 +481,10 @@ if ($arpa==2){
         </div>
 		<div id="burana" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
-					$stmt = $db->query('SELECT Substance FROM active_substance WHERE PrimaryKey = ANY (SELECT Substance FROM active_substances WHERE Brand = (SELECT PrimaryKey FROM brand WHERE brand = 'Burana'))');
+					$stmt = $db->query('SELECT Burana FROM brand');
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "{$row['Brand']}, {$row['Description']}<br>\n";
+					}
 					
 				?>
         </div>
