@@ -482,9 +482,7 @@ if ($arpa==2){
 		<div id="burana" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query('SELECT Burana FROM brand');
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "{$row['Brand']}, {$row['Description']}<br>\n";
-					}
+					echo $stmt->fetch(PDO::FETCH_ASSOC);
 					
 				?>
         </div>
