@@ -483,7 +483,7 @@ if ($arpa==2){
                 <?php
 					$stmt = $db->query('SELECT Substance FROM active_substance WHERE PrimaryKey = ANY (SELECT Substance FROM active_substances WHERE Brand = (SELECT PrimaryKey FROM brand WHERE brand = 'Burana'))');
 					$row = $stmt->fetch(PDO::FETCH_ASSOC);
-					echo "{$row['Substance']};
+					echo "{$row['Substance']}";
 					
 				?>
         </div>
