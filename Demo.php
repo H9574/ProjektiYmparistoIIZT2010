@@ -474,9 +474,11 @@ if ($arpa==2){
         <div id="makkara" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query('SELECT * FROM brand');
+					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "{$row['Brand']}<br>{$row['Description']}\n";
+						echo "<td><tr>{$row['Brand']}</tr><tr>{$row['Description']}</tr><td>\n";
 					}
+					echo "</table>";
 				?>
         </div>
 		
