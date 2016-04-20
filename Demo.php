@@ -473,10 +473,10 @@ if ($arpa==2){
         <canvas id="demoCanvas" width="1388" height="694"></canvas>
         <div id="makkara" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
-					$stmt = $db->query('SELECT * FROM brand');
+					$stmt = $db->query('SELECT * FROM medicine');
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Description']}</td><tr>\n";
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
 					}
 					echo "</table>";
 				?>
