@@ -185,62 +185,74 @@ try{
 		circle21.addEventListener("click", function(event) { alert("clicked"); })
 		circle22.addEventListener("click", function(event) { alert("clicked"); })
 		
-        circle.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle1.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle2.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
+        circle.addEventListener("mouseover", function(event) {a.style.opacity = 1; })
+		circle1.addEventListener("mouseover", function(event) {b.style.opacity = 1; })
+		circle2.addEventListener("mouseover", function(event) {c.style.opacity = 1; })
 		circle3.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle4.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle5.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle6.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle7.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle8.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle9.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle10.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle11.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle12.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle13.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle14.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle15.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle16.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle17.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle18.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle19.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle20.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle21.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		circle22.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
+		circle4.addEventListener("mouseover", function(event) {e.style.opacity = 1; })
+		circle5.addEventListener("mouseover", function(event) {f.style.opacity = 1; })
+		circle6.addEventListener("mouseover", function(event) {g.style.opacity = 1; })
+		circle7.addEventListener("mouseover", function(event) {h.style.opacity = 1; })
+		circle8.addEventListener("mouseover", function(event) {i.style.opacity = 1; })
+		circle9.addEventListener("mouseover", function(event) {j.style.opacity = 1; })
+		circle10.addEventListener("mouseover", function(event) {k.style.opacity = 1; })
+		circle11.addEventListener("mouseover", function(event) {l.style.opacity = 1; })
+		circle12.addEventListener("mouseover", function(event) {m.style.opacity = 1; })
+		circle13.addEventListener("mouseover", function(event) {n.style.opacity = 1; })
+		circle14.addEventListener("mouseover", function(event) {o.style.opacity = 1; })
+		circle15.addEventListener("mouseover", function(event) {p.style.opacity = 1; })
+		circle16.addEventListener("mouseover", function(event) {q.style.opacity = 1; })
+		circle17.addEventListener("mouseover", function(event) {r.style.opacity = 1; })
+		circle18.addEventListener("mouseover", function(event) {s.style.opacity = 1; })
+		circle19.addEventListener("mouseover", function(event) {t.style.opacity = 1; })
+		circle20.addEventListener("mouseover", function(event) {u.style.opacity = 1; })
+		circle21.addEventListener("mouseover", function(event) {v.style.opacity = 1; })
+		circle22.addEventListener("mouseover", function(event) {x.style.opacity = 1; })
 	
 		
-        circle.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle1.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle2.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+        circle.addEventListener("mouseout", function(event) {a.style.opacity = 0; })
+		circle1.addEventListener("mouseout", function(event) {b.style.opacity = 0; })
+		circle2.addEventListener("mouseout", function(event) {c.style.opacity = 0; })
 		circle3.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle4.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle5.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle6.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle7.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle8.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle9.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle10.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle11.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle12.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle13.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle14.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle15.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle16.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle17.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle18.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle19.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle20.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle21.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle22.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+		circle4.addEventListener("mouseout", function(event) {e.style.opacity = 0; })
+		circle5.addEventListener("mouseout", function(event) {f.style.opacity = 0; })
+		circle6.addEventListener("mouseout", function(event) {g.style.opacity = 0; })
+		circle7.addEventListener("mouseout", function(event) {h.style.opacity = 0; })
+		circle8.addEventListener("mouseout", function(event) {i.style.opacity = 0; })
+		circle9.addEventListener("mouseout", function(event) {j.style.opacity = 0; })
+		circle10.addEventListener("mouseout", function(event) {k.style.opacity = 0; })
+		circle11.addEventListener("mouseout", function(event) {l.style.opacity = 0; })
+		circle12.addEventListener("mouseout", function(event) {m.style.opacity = 0; })
+		circle13.addEventListener("mouseout", function(event) {n.style.opacity = 0; })
+		circle14.addEventListener("mouseout", function(event) {o.style.opacity = 0; })
+		circle15.addEventListener("mouseout", function(event) {p.style.opacity = 0; })
+		circle16.addEventListener("mouseout", function(event) {q.style.opacity = 0; })
+		circle17.addEventListener("mouseout", function(event) {r.style.opacity = 0; })
+		circle18.addEventListener("mouseout", function(event) {s.style.opacity = 0; })
+		circle19.addEventListener("mouseout", function(event) {t.style.opacity = 0; })
+		circle20.addEventListener("mouseout", function(event) {u.style.opacity = 0; })
+		circle21.addEventListener("mouseout", function(event) {v.style.opacity = 0; })
+		circle22.addEventListener("mouseout", function(event) {x.style.opacity = 0; })
 		
 		
+		var laake, laakemaara, i;
+		laake = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", 
+				"l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x"];
+		laakemaara = laake.length;
+		for (i = 0; i < laakemaara; i++) {
+			var laake[i] = document.getElementById(laake[i]);
+			laake[i].style.position = "absolute";
+			laake[i].style.left = "80px";
+			laake[i].style.top = "850px";
+			laake[i].style.opacity = 0;
+		}
+		/*
         var d = document.getElementById('makkara');
         d.style.position = "absolute";
         d.style.left = "80px";
         d.style.top = "850px";
         d.style.opacity = 0;
-		
+		*/
         //d.style.z-index = 0;
         //var z = document.getElementById('juusto');
         //z.style.position = "absolute";
@@ -468,7 +480,19 @@ if ($arpa==2){
 
 <div id="isodiv">
 <canvas id="demoCanvas" width="1388" height="694"></canvas>
+<!-- Tiedon hakeminen tietokannasta -->
 <div id="makkara" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM medicine");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="a" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
 										FROM medicine 
@@ -479,5 +503,19 @@ if ($arpa==2){
 					}
 					echo "</table>";
 				?>
-</div></div>
+</div>
+<div id="b" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM medicine 
+										WHERE Brand='1'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+
+</div>
 </body></html>
