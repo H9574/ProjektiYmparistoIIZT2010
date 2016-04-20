@@ -233,7 +233,7 @@ try{
 		circle20.addEventListener("mouseout", function(event) {u.style.opacity = 0; })
 		circle21.addEventListener("mouseout", function(event) {v.style.opacity = 0; })
 		circle22.addEventListener("mouseout", function(event) {x.style.opacity = 0; })
-		
+		/*
 		var a = document.getElementById('a');
         a.style.position = "absolute";
         a.style.left = "80px";
@@ -371,9 +371,9 @@ try{
         x.style.left = "80px";
         x.style.top = "850px";
         x.style.opacity = 0;
+		*/
 		
 		
-		/*
 		var laake, laakemaara, i;
 		laake = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", 
 				"l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x"];
@@ -385,7 +385,7 @@ try{
 			laake[i].style.top = "850px";
 			laake[i].style.opacity = 0;
 		}
-		
+		/*
         var d = document.getElementById('makkara');
         d.style.position = "absolute";
         d.style.left = "80px";
