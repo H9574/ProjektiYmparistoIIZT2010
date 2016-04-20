@@ -233,7 +233,7 @@ try{
 		circle20.addEventListener("mouseout", function(event) {u.style.opacity = 0; })
 		circle21.addEventListener("mouseout", function(event) {v.style.opacity = 0; })
 		circle22.addEventListener("mouseout", function(event) {x.style.opacity = 0; })
-		/*
+		/**/
 		var a = document.getElementById('a');
         a.style.position = "absolute";
         a.style.left = "80px";
@@ -371,9 +371,9 @@ try{
         x.style.left = "80px";
         x.style.top = "850px";
         x.style.opacity = 0;
-		*/
+		/**/
 		
-		
+		/*
 		var laake, laakemaara, i;
 		laake = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", 
 				"l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x"];
@@ -385,7 +385,7 @@ try{
 			laake[i].style.top = "850px";
 			laake[i].style.opacity = 0;
 		}
-		/*
+		
         var d = document.getElementById('makkara');
         d.style.position = "absolute";
         d.style.left = "80px";
@@ -636,8 +636,8 @@ if ($arpa==2){
 <div id="a" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='1'");
+										FROM brand 
+										WHERE PrimaryKey='1'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -648,8 +648,8 @@ if ($arpa==2){
 <div id="b" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='2'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -660,8 +660,8 @@ if ($arpa==2){
 <div id="c" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='3'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -672,8 +672,8 @@ if ($arpa==2){
 <div id="d" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='4'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -684,8 +684,8 @@ if ($arpa==2){
 <div id="e" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='5'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -696,8 +696,8 @@ if ($arpa==2){
 <div id="f" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='6'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -708,8 +708,8 @@ if ($arpa==2){
 <div id="g" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='7'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -720,8 +720,8 @@ if ($arpa==2){
 <div id="h" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='8'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -732,8 +732,8 @@ if ($arpa==2){
 <div id="i" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='9'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -744,8 +744,8 @@ if ($arpa==2){
 <div id="j" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='10'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -756,8 +756,8 @@ if ($arpa==2){
 <div id="k" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='11'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -768,8 +768,8 @@ if ($arpa==2){
 <div id="l" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='12'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -780,8 +780,8 @@ if ($arpa==2){
 <div id="m" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='13'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -792,8 +792,8 @@ if ($arpa==2){
 <div id="n" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='14'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -804,8 +804,8 @@ if ($arpa==2){
 <div id="o" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='15'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -816,8 +816,8 @@ if ($arpa==2){
 <div id="p" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='16'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -828,8 +828,8 @@ if ($arpa==2){
 <div id="q" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='17'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -840,8 +840,8 @@ if ($arpa==2){
 <div id="r" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='18'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -852,8 +852,8 @@ if ($arpa==2){
 <div id="s" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='19'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -864,8 +864,8 @@ if ($arpa==2){
 <div id="t" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='20'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -876,8 +876,8 @@ if ($arpa==2){
 <div id="u" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='21'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -888,8 +888,8 @@ if ($arpa==2){
 <div id="v" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='22'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -900,8 +900,8 @@ if ($arpa==2){
 <div id="x" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
-										FROM medicine 
-										WHERE Brand='2'");
+										FROM brand 
+										WHERE PrimaryKey='23'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
