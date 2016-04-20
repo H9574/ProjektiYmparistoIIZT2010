@@ -202,7 +202,8 @@ try{
 							"circle20","circle21","circle22"];
 		
 		for(int j = 0; j <= 22; j++){
-			events[j].addEventListener("mouseout", function(event) {d.style.opacity = 0; });
+			var paska = events[j];
+			paska.addEventListener("mouseout", function(event) {d.style.opacity = 0; });
 		}
 		
         /*circle.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
