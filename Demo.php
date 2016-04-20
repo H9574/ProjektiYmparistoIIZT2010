@@ -150,6 +150,7 @@ try{
         stage.addChild(circle22);
 		
         stage.enableMouseOver();
+		
         circle.addEventListener("click", function(event) { alert("clicked"); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
@@ -174,6 +175,15 @@ try{
 		circle21.addEventListener("click", function(event) { alert("clicked"); })
 		circle22.addEventListener("click", function(event) { alert("clicked"); })
 		
+		var laake, text, laakemaara, i;
+		laake = ["circle", "circle1", "circle2", "circle3", "circle4", "circle5", "circle6", "circle7", "circle8", "circle9", "circle10", "circle11", "circle12", "circle13", "circle14", "circle15", "circle16", "circle17", "circle18", "circle19", "circle20", "circle21", "circle22"];
+		laakemaara = laake.length;
+		//text = "<ul>";
+		for (i = 0; i < laakemaara; i++) {
+			//text += "<li>" + laake[i] + "</li>";
+			laake[i].addEventListener("mouseover", function(event) {d.style.opacity = 1; })
+			}
+		/*
         circle.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle1.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle2.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
@@ -197,7 +207,7 @@ try{
 		circle20.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle21.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle22.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		
+		*/
 		
 		
         circle.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
@@ -241,32 +251,23 @@ try{
         stage.style.position = "centered";
         //stage.style.z-index = 0;
 }
-
 </script>
 </head>
 <body  onload="init();">
         <header class="mainheader">
-                <div class="menu">
+        <div class="menu">
         <nav><ul>
-
         <li> <a href="#">Peli näkymä</a> </li>
         <li> <a href="ulos.php">Sign out</a> </li>
-
-        </ul></nav>
-                </div>
+        </ul></nav></div>
     </header>
-
-                <div class="mainContent">
+    <div class="mainContent">
         <div class="content">
                 <article class="topcontent">
-
-                                                <header>
+                        <header>
                         <h2>Team Hönö Demo game: MedGame</h2>
-                        </header>
-
-                    <content >
-                                        <h3>Doctor needs the answer for the following question:</h3>
-
+                        </header><content >
+                        <h3>Doctor needs the answer for the following question:</h3>
 <?php
 require_once 'Laskuja.class.php';
 $arpa = rand(1, 16);
@@ -464,14 +465,11 @@ if ($arpa==2){
 			<input type='submit' value='Give to the patient' /></form>";
 }
 ?>
-                                        </content>
-                                </article>
-        </div>
-		</div>
+</content></article></div></div>
 
 <div id="isodiv">
-        <canvas id="demoCanvas" width="1388" height="694"></canvas>
-        <div id="makkara" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+<canvas id="demoCanvas" width="1388" height="694"></canvas>
+<div id="makkara" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query('SELECT * FROM medicine');
 					echo "<table>";
@@ -480,10 +478,5 @@ if ($arpa==2){
 					}
 					echo "</table>";
 				?>
-        </div>
-		
-</div>
-
-</body>
-
-</html>
+</div></div>
+</body></html>
