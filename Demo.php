@@ -245,6 +245,134 @@ try{
         b.style.left = "80px";
         b.style.top = "850px";
         b.style.opacity = 0;
+		
+		var c = document.getElementById('c');
+        c.style.position = "absolute";
+        c.style.left = "80px";
+        c.style.top = "850px";
+        c.style.opacity = 0;
+		
+		var d = document.getElementById('d');
+        d.style.position = "absolute";
+        d.style.left = "80px";
+        d.style.top = "850px";
+        d.style.opacity = 0;
+		
+		var e = document.getElementById('e');
+        e.style.position = "absolute";
+        e.style.left = "80px";
+        e.style.top = "850px";
+        e.style.opacity = 0;
+		
+		var f = document.getElementById('f');
+        f.style.position = "absolute";
+        f.style.left = "80px";
+        f.style.top = "850px";
+        f.style.opacity = 0;
+		
+		var g = document.getElementById('g');
+        g.style.position = "absolute";
+        g.style.left = "80px";
+        g.style.top = "850px";
+        g.style.opacity = 0;
+		
+		var h = document.getElementById('h');
+        h.style.position = "absolute";
+        h.style.left = "80px";
+        h.style.top = "850px";
+        h.style.opacity = 0;
+		
+		var i = document.getElementById('i');
+        i.style.position = "absolute";
+        i.style.left = "80px";
+        i.style.top = "850px";
+        i.style.opacity = 0;
+		
+		var j = document.getElementById('j');
+        j.style.position = "absolute";
+        j.style.left = "80px";
+        j.style.top = "850px";
+        j.style.opacity = 0;
+		
+		var k = document.getElementById('k');
+        k.style.position = "absolute";
+        k.style.left = "80px";
+        k.style.top = "850px";
+        k.style.opacity = 0;
+		
+		var l = document.getElementById('l');
+        l.style.position = "absolute";
+        l.style.left = "80px";
+        l.style.top = "850px";
+        l.style.opacity = 0;
+		
+		var m = document.getElementById('m');
+        m.style.position = "absolute";
+        m.style.left = "80px";
+        m.style.top = "850px";
+        m.style.opacity = 0;
+		
+		var n = document.getElementById('n');
+        n.style.position = "absolute";
+        n.style.left = "80px";
+        n.style.top = "850px";
+        n.style.opacity = 0;
+		
+		var o = document.getElementById('o');
+        o.style.position = "absolute";
+        o.style.left = "80px";
+        o.style.top = "850px";
+        o.style.opacity = 0;
+		
+		var p = document.getElementById('p');
+        p.style.position = "absolute";
+        p.style.left = "80px";
+        p.style.top = "850px";
+        p.style.opacity = 0;
+		
+		var q = document.getElementById('q');
+        q.style.position = "absolute";
+        q.style.left = "80px";
+        q.style.top = "850px";
+        q.style.opacity = 0;
+		
+		var r = document.getElementById('r');
+        r.style.position = "absolute";
+        r.style.left = "80px";
+        r.style.top = "850px";
+        r.style.opacity = 0;
+		
+		var s = document.getElementById('s');
+        s.style.position = "absolute";
+        s.style.left = "80px";
+        s.style.top = "850px";
+        s.style.opacity = 0;
+		
+		var t = document.getElementById('t');
+        t.style.position = "absolute";
+        t.style.left = "80px";
+        t.style.top = "850px";
+        t.style.opacity = 0;
+		
+		var u = document.getElementById('u');
+        u.style.position = "absolute";
+        u.style.left = "80px";
+        u.style.top = "850px";
+        u.style.opacity = 0;
+		
+		var v = document.getElementById('v');
+        v.style.position = "absolute";
+        v.style.left = "80px";
+        v.style.top = "850px";
+        v.style.opacity = 0;
+		
+		var x = document.getElementById('x');
+        x.style.position = "absolute";
+        x.style.left = "80px";
+        x.style.top = "850px";
+        x.style.opacity = 0;
+		
+		
 		/*
 		var laake, laakemaara, i;
 		laake = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", 
@@ -781,6 +909,5 @@ if ($arpa==2){
 					echo "</table>";
 				?>
 </div>
-
 </div>
 </body></html>
