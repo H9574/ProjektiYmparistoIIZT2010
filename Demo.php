@@ -32,11 +32,38 @@ try{
         var bitmap = new createjs.Bitmap(tausta);
         stage.addChild(bitmap);
 		
-        var circle0 = new createjs.Shape();
-        circle0.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
-        circle0.x = 100;
-        circle0.y = 100;
-        stage.addChild(circle0);
+		for(int i = 0; i <= 23; i++){
+			if(i <= 7){
+				var circle[i] = new createjs.Shape();
+				circle[i].graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
+				circle[i].x = 100;
+				circle[i].y = 100;
+				stage.addChild(circle[i]);
+				circle[i] + 100;
+			}
+			if(7 < i <= 14){
+				var circle[i] = new createjs.Shape();
+				circle[i].graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
+				circle[i].x = 100;
+				circle[i].y = 200;
+				stage.addChild(circle[i]);
+				circle[i] + 100;
+			}
+			if(14 < i <= 23){
+				var circle[i] = new createjs.Shape();
+				circle[i].graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
+				circle[i].x = 100;
+				circle[i].y = 300;
+				stage.addChild(circle[i]);
+				circle[i] + 100;
+			}
+		}
+		/*
+        var circle = new createjs.Shape();
+        circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
+        circle.x = 100;
+        circle.y = 100;
+        stage.addChild(circle);
 		var circle1 = new createjs.Shape();
         circle1.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
         circle1.x = 200;
@@ -146,7 +173,7 @@ try{
         circle22.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
         circle22.x = 700;
         circle22.y = 300;
-        stage.addChild(circle22);
+        stage.addChild(circle22);*/
 		
         stage.enableMouseOver();
         circle.addEventListener("click", function(event) { alert("clicked"); })
@@ -197,16 +224,9 @@ try{
 		circle21.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle22.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		
-		var events = ["circle0","circle1","circle2","circle3","circle4","circle5","circle6","circle7","circle8","circle9",
-							"circle10","circle11","circle12","circle13","circle14","circle15","circle16","circle17","circle18","circle19",
-							"circle20","circle21","circle22"];
 		
-		for(int j = 0; j <= 22; j++){
-			var paska = events[j];
-			paska.addEventListener("mouseout", function(event) {d.style.opacity = 0; });
-		}
 		
-        /*circle.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+        circle.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle1.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle2.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle3.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
@@ -228,7 +248,7 @@ try{
 		circle19.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle20.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle21.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle22.addEventListener("mouseout", function(event) {d.style.opacity = 0; })*/
+		circle22.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		
 		
 		
