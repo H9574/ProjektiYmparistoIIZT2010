@@ -32,14 +32,6 @@ try{
         tausta.src = "MedicineRoom.png"
         var bitmap = new createjs.Bitmap(tausta);
         stage.addChild(bitmap);
-		
-		//lisätään palleroita		
-		var laake, laakemaara, i;
-		laake = ["circle", "circle1", "circle2", "circle3", "circle4", "circle5", "circle6", "circle7", "circle8", "circle9", "circle10", "circle11", "circle12", "circle13", "circle14", "circle15", "circle16", "circle17", "circle18", "circle19", "circle20", "circle21", "circle22"];
-		laakemaara = laake.length;
-		for (i = 0; i < laakemaara; i++) {
-			laake[i].addEventListener("click", function(event) { alert("clicked"); })
-			}
 			
         var circle = new createjs.Shape();
         circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
@@ -158,6 +150,14 @@ try{
         stage.addChild(circle22);
 		
         stage.enableMouseOver();
+		
+		//lisätään palleroita		
+		var laake, laakemaara, i;
+		laake = ["circle", "circle1", "circle2", "circle3", "circle4", "circle5", "circle6", "circle7", "circle8", "circle9", "circle10", "circle11", "circle12", "circle13", "circle14", "circle15", "circle16", "circle17", "circle18", "circle19", "circle20", "circle21", "circle22"];
+		laakemaara = laake.length;
+		for (i = 0; i < laakemaara; i++) {
+			laake[i].addEventListener("click", function(event) { alert("clicked"); })
+			}
 		
 		/*
         circle.addEventListener("click", function(event) { alert("clicked"); })
