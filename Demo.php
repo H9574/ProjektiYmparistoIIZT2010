@@ -151,15 +151,13 @@ try{
 		
         stage.enableMouseOver();
 		
-		var laake, text, laakemaara, i;
+		var laake, laakemaara, i;
 		laake = ["circle", "circle1", "circle2", "circle3", "circle4", "circle5", "circle6", "circle7", "circle8", "circle9", "circle10", "circle11", "circle12", "circle13", "circle14", "circle15", "circle16", "circle17", "circle18", "circle19", "circle20", "circle21", "circle22"];
 		laakemaara = laake.length;
-		//text = "<ul>";
 		for (i = 0; i < laakemaara; i++) {
-			//text += "<li>" + laake[i] + "</li>";
-			laake[i]+.addEventListener("click", function(event) { alert("clicked"); })
-			laake[i]+.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-			laake[i]+.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+			laake[i].addEventListener("click", function(event) { alert("clicked"); })
+			laake[i].addEventListener("mouseover", function(event) {d.style.opacity = 1; })
+			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 			}
 		
 		/*
