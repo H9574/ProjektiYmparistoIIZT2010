@@ -151,6 +151,18 @@ try{
 		
         stage.enableMouseOver();
 		
+		var laake, text, laakemaara, i;
+		laake = ["circle", "circle1", "circle2", "circle3", "circle4", "circle5", "circle6", "circle7", "circle8", "circle9", "circle10", "circle11", "circle12", "circle13", "circle14", "circle15", "circle16", "circle17", "circle18", "circle19", "circle20", "circle21", "circle22"];
+		laakemaara = laake.length;
+		//text = "<ul>";
+		for (i = 0; i < laakemaara; i++) {
+			//text += "<li>" + laake[i] + "</li>";
+			laake[i].addEventListener("click", function(event) { alert("clicked"); })
+			laake[i].addEventListener("mouseover", function(event) {d.style.opacity = 1; })
+			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+			}
+		
+		/*
         circle.addEventListener("click", function(event) { alert("clicked"); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
@@ -175,15 +187,6 @@ try{
 		circle21.addEventListener("click", function(event) { alert("clicked"); })
 		circle22.addEventListener("click", function(event) { alert("clicked"); })
 		
-		var laake, text, laakemaara, i;
-		laake = ["circle", "circle1", "circle2", "circle3", "circle4", "circle5", "circle6", "circle7", "circle8", "circle9", "circle10", "circle11", "circle12", "circle13", "circle14", "circle15", "circle16", "circle17", "circle18", "circle19", "circle20", "circle21", "circle22"];
-		laakemaara = laake.length;
-		//text = "<ul>";
-		for (i = 0; i < laakemaara; i++) {
-			//text += "<li>" + laake[i] + "</li>";
-			laake[i].addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-			}
-		/*
         circle.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle1.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle2.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
@@ -207,8 +210,7 @@ try{
 		circle20.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle21.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle22.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-		*/
-		
+	
 		
         circle.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle1.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
@@ -233,7 +235,7 @@ try{
 		circle20.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle21.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle22.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		
+		*/
 		
 		
         var d = document.getElementById('makkara');
