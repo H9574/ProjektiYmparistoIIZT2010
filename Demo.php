@@ -150,7 +150,7 @@ try{
         stage.addChild(circle22);
 		
         stage.enableMouseOver();
-		
+		/*
 		//lisätään palleroita		
 		var laake, laakemaara, i;
 		laake = ["circle", "circle1", "circle2", "circle3", "circle4", "circle5", "circle6", "circle7", "circle8", "circle9", "circle10", "circle11", "circle12", "circle13", "circle14", "circle15", "circle16", "circle17", "circle18", "circle19", "circle20", "circle21", "circle22"];
@@ -158,8 +158,8 @@ try{
 		for (i = 0; i < laakemaara; i++) {
 			laake[i].addEventListener("click", function(event) { alert("clicked"); })
 			}
+		*/
 		
-		/*
         circle.addEventListener("click", function(event) { alert("clicked"); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
@@ -183,7 +183,7 @@ try{
 		circle20.addEventListener("click", function(event) { alert("clicked"); })
 		circle21.addEventListener("click", function(event) { alert("clicked"); })
 		circle22.addEventListener("click", function(event) { alert("clicked"); })
-		*/
+		
         circle.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle1.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle2.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
