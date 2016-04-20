@@ -181,7 +181,7 @@ try{
 		//text = "<ul>";
 		for (i = 0; i < laakemaara; i++) {
 			//text += "<li>" + laake[i] + "</li>";
-			laake[i] + .addEventListener("mouseover", function(event) {d.style.opacity = 1; })
+			laake[i] += .addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 			}
 		/*
         circle.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
