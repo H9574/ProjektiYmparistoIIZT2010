@@ -197,7 +197,14 @@ try{
 		circle21.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle22.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		
-        circle.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+		var events = circle[22];
+		
+		for(int j = 0; j <= 22; j++){
+			var ympyra = circle[this.j];
+			ympyra.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+		}
+		
+        /*circle.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle1.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle2.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle3.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
@@ -219,7 +226,7 @@ try{
 		circle19.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle20.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle21.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		circle22.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+		circle22.addEventListener("mouseout", function(event) {d.style.opacity = 0; })*/
 		
 		
 		
