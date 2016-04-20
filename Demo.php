@@ -18,7 +18,7 @@ try{
 
 <script>
   function init() {
-    var stage = new createjs.Stage("demoCanvas");
+		var stage = new createjs.Stage("demoCanvas");
         createjs.Ticker.addEventListener("tick", handleTick);
         function handleTick(event) {
 			stage.update();
@@ -26,14 +26,12 @@ try{
 				stage.update();
             }
         }
+		
         // piirretään pelin tausta
         var tausta = new Image();
         tausta.src = "MedicineRoom.png"
         var bitmap = new createjs.Bitmap(tausta);
         stage.addChild(bitmap);
-		
-		
-		
 		
         var circle = new createjs.Shape();
         circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
@@ -475,7 +473,7 @@ if ($arpa==2){
         <canvas id="demoCanvas" width="1388" height="694"></canvas>
         <div id="makkara" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
-					$stmt = $db->query('SELECT * FROM brand');
+					$stmt = $db->query('SELECT * FROM medicine');
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "{$row['Brand']}<br>\n";
 					}
