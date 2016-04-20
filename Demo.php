@@ -32,11 +32,11 @@ try{
         var bitmap = new createjs.Bitmap(tausta);
         stage.addChild(bitmap);
 		
-        var circle = new createjs.Shape();
-        circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
-        circle.x = 100;
-        circle.y = 100;
-        stage.addChild(circle);
+        var circle0 = new createjs.Shape();
+        circle0.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
+        circle0.x = 100;
+        circle0.y = 100;
+        stage.addChild(circle0);
 		var circle1 = new createjs.Shape();
         circle1.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
         circle1.x = 200;
@@ -197,10 +197,12 @@ try{
 		circle21.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle22.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		
-		var events = circle[22];
+		var events = circle["circle0","circle1","circle2","circle3","circle4","circle5","circle6","circle7","circle8","circle9",
+							"circle10","circle11","circle12","circle13","circle14","circle15","circle16","circle17","circle18","circle19",
+							"circle20","circle21","circle22"];
 		
 		for(int j = 0; j <= 22; j++){
-			var ympyra = circle[this.j];
+			var ympyra = "circle[this.j]";
 			ympyra.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		}
 		
