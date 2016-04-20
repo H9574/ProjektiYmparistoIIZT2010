@@ -197,12 +197,12 @@ try{
 		circle21.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		circle22.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
 		
-		var events = circle["circle0","circle1","circle2","circle3","circle4","circle5","circle6","circle7","circle8","circle9",
+		var events = ["circle0","circle1","circle2","circle3","circle4","circle5","circle6","circle7","circle8","circle9",
 							"circle10","circle11","circle12","circle13","circle14","circle15","circle16","circle17","circle18","circle19",
 							"circle20","circle21","circle22"];
 		
 		for(int j = 0; j <= 22; j++){
-			circle[j];.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+			events[j].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		}
 		
         /*circle.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
