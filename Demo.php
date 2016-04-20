@@ -476,7 +476,7 @@ if ($arpa==2){
 					$stmt = $db->query('SELECT * FROM brand');
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<td><tr>{$row['Brand']}</tr><tr>{$row['Description']}</tr><td>\n";
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Description']}</td><tr>\n";
 					}
 					echo "</table>";
 				?>
