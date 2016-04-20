@@ -21,8 +21,8 @@ try{
     var stage = new createjs.Stage("demoCanvas");
         createjs.Ticker.addEventListener("tick", handleTick);
         function handleTick(event) {
-		stage.update();
-		if (!event.paused) {
+			stage.update();
+			if (!event.paused) {
 				pallot();
 				stage.update();
             }
@@ -243,6 +243,7 @@ try{
         //d.style.z-index = 1;
         stage.style.position = "centered";
         //stage.style.z-index = 0;
+		stage.update();
   }
 function pallot(){
 	for(int i = 0; i <= 23; i++){
