@@ -23,8 +23,9 @@ try{
         function handleTick(event) {
 		stage.update();
 		if (!event.paused) {
+				pallot();
 				stage.update();
-                }
+            }
         }
         // piirretään pelin tausta
         var tausta = new Image();
@@ -32,7 +33,7 @@ try{
         var bitmap = new createjs.Bitmap(tausta);
         stage.addChild(bitmap);
 		
-		pallot();
+		
 		
 		/*
         var circle = new createjs.Shape();
