@@ -23,7 +23,6 @@ try{
         function handleTick(event) {
 			stage.update();
 			if (!event.paused) {
-				pallot();
 				stage.update();
             }
         }
@@ -35,7 +34,7 @@ try{
 		
 		
 		
-		/*
+		
         var circle = new createjs.Shape();
         circle.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
         circle.x = 100;
@@ -150,7 +149,7 @@ try{
         circle22.graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
         circle22.x = 700;
         circle22.y = 300;
-        stage.addChild(circle22);*/
+        stage.addChild(circle22);
 		
         stage.enableMouseOver();
         circle.addEventListener("click", function(event) { alert("clicked"); })
@@ -243,36 +242,8 @@ try{
         //d.style.z-index = 1;
         stage.style.position = "centered";
         //stage.style.z-index = 0;
-		stage.update();
-  }
-function pallot(){
-	for(int i = 0; i <= 23; i++){
-			if(i <= 7){
-				var circle[i] = new createjs.Shape();
-				circle[i].graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
-				circle[i].x = 100;
-				circle[i].y = 100;
-				stage.addChild(circle[i]);
-				circle[i] + 100;
-			}
-			if(7 < i <= 14){
-				var circle[i] = new createjs.Shape();
-				circle[i].graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
-				circle[i].x = 100;
-				circle[i].y = 200;
-				stage.addChild(circle[i]);
-				circle[i] + 100;
-			}
-			if(14 < i <= 23){
-				var circle[i] = new createjs.Shape();
-				circle[i].graphics.beginFill("DeepSkyBlue").drawCircle(0, 0, 45);
-				circle[i].x = 100;
-				circle[i].y = 300;
-				stage.addChild(circle[i]);
-				circle[i] + 100;
-			}
-		}
 }
+
 </script>
 </head>
 <body  onload="init();">
