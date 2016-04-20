@@ -202,8 +202,7 @@ try{
 							"circle20","circle21","circle22"];
 		
 		for(int j = 0; j <= 22; j++){
-			var ympyra = "circle[this.j]";
-			ympyra.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+			circle[j];.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		}
 		
         /*circle.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
