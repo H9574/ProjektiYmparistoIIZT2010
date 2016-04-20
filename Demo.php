@@ -157,9 +157,9 @@ try{
 		//text = "<ul>";
 		for (i = 0; i < laakemaara; i++) {
 			//text += "<li>" + laake[i] + "</li>";
-			laake[i].addEventListener("click", function(event) { alert("clicked"); })
-			laake[i].addEventListener("mouseover", function(event) {d.style.opacity = 1; })
-			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+			laake[i]+.addEventListener("click", function(event) { alert("clicked"); })
+			laake[i]+.addEventListener("mouseover", function(event) {d.style.opacity = 1; })
+			laake[i]+.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 			}
 		
 		/*
