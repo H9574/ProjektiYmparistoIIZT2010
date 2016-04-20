@@ -234,7 +234,18 @@ try{
 		circle21.addEventListener("mouseout", function(event) {v.style.opacity = 0; })
 		circle22.addEventListener("mouseout", function(event) {x.style.opacity = 0; })
 		
+		var a = document.getElementById('a');
+        a.style.position = "absolute";
+        a.style.left = "80px";
+        a.style.top = "850px";
+        a.style.opacity = 0;
 		
+		var b = document.getElementById('b');
+        b.style.position = "absolute";
+        b.style.left = "80px";
+        b.style.top = "850px";
+        b.style.opacity = 0;
+		/*
 		var laake, laakemaara, i;
 		laake = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", 
 				"l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x"];
@@ -246,7 +257,7 @@ try{
 			laake[i].style.top = "850px";
 			laake[i].style.opacity = 0;
 		}
-		/*
+		
         var d = document.getElementById('makkara');
         d.style.position = "absolute";
         d.style.left = "80px";
@@ -508,7 +519,7 @@ if ($arpa==2){
                 <?php
 					$stmt = $db->query("SELECT * 
 										FROM medicine 
-										WHERE Brand='1'");
+										WHERE Brand='2'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
@@ -516,6 +527,5 @@ if ($arpa==2){
 					echo "</table>";
 				?>
 </div>
-
 </div>
 </body></html>
