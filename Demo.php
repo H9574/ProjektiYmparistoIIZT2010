@@ -151,15 +151,16 @@ try{
 		
         stage.enableMouseOver();
 		/*
-		//lisätään palleroita		
+		//for looppi ei pelaa, koska toiminnallisuus tuhoutuu jos pallerot laittaa loopin sisään. Näkyy, mutta ei toimi.		
 		var laake, laakemaara, i;
 		laake = ["circle", "circle1", "circle2", "circle3", "circle4", "circle5", "circle6", "circle7", "circle8", "circle9", "circle10", "circle11", "circle12", "circle13", "circle14", "circle15", "circle16", "circle17", "circle18", "circle19", "circle20", "circle21", "circle22"];
 		laakemaara = laake.length;
 		for (i = 0; i < laakemaara; i++) {
 			laake[i].addEventListener("click", function(event) { alert("clicked"); })
+			laake[i].addEventListener("mouseover", function(event) {d.style.opacity = 1; })
+			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 			}
 		*/
-		
         circle.addEventListener("click", function(event) { alert("clicked"); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
@@ -232,7 +233,6 @@ try{
 		circle20.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle21.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 		circle22.addEventListener("mouseout", function(event) {d.style.opacity = 0; })
-		
 		
 		
         var d = document.getElementById('makkara');
@@ -470,7 +470,9 @@ if ($arpa==2){
 <canvas id="demoCanvas" width="1388" height="694"></canvas>
 <div id="makkara" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
-					$stmt = $db->query('SELECT * FROM medicine');
+					$stmt = $db->query("SELECT * 
+										FROM medicine 
+										WHERE Brand='1'");
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
