@@ -5,6 +5,7 @@ try{
 	echo "ErrMsg to enduser!<hr>\n";
     echo "CatchErrMsg: " . $ex->getMessage() . "<hr>\n";
 }
+/*
 					//Evästeiden nimeäminen
 					$Valinta = "valinta";
 					$Valinta1 = "valinta1";
@@ -146,7 +147,7 @@ try{
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
 						setcookie($Valinta22, $Annettu);
-					}
+					}*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -159,6 +160,18 @@ try{
 
 <script>
   function init() {
+		//var oppilas;
+		//var tulos = getCookie("tulos");
+		
+		function ValittuLaake(Vastaus, Ratkaisu){
+			if (Vastaus == Ratkaisu){
+				location.replace("https://medgame.herokuapp.com/oikea.php")
+			} else
+			{
+				location.replace("https://medgame.herokuapp.com/vaara.php")
+			}
+		}
+		/*
 		function getCookie(cname) {
 		var name = cname + "=";
 		var ca = document.cookie.split(';');
@@ -173,19 +186,7 @@ try{
 			}
 			return "";
 		}
-		
-		var oppilas;
-		var tulos = getCookie("tulos");
-		
-		function ValittuLaake(Vastaus, Ratkaisu){
-			if (Vastaus == Ratkaisu){
-				location.replace("https://medgame.herokuapp.com/oikea.php")
-			} else
-			{
-				location.replace("https://medgame.herokuapp.com/vaara.php")
-			}
-		}
-	  
+	  */
 		var stage = new createjs.Stage("demoCanvas");
         createjs.Ticker.addEventListener("tick", handleTick);
         function handleTick(event) {
@@ -319,7 +320,8 @@ try{
 		
         stage.enableMouseOver();
 
-		circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos="Burana"); })
+		//circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos="Burana"); })
+				circle.addEventListener("click", function(event) { alert("clicked"); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
