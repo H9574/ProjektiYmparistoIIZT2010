@@ -10,15 +10,15 @@ try{
 	$Valinta = "valinta";
 	
 	$arpa = rand(17, 18);
-	require_once 'TehtavanArvonta.class.php';
-	$ArvoEvaste = new Evaste();
+	//require_once 'TehtavanArvonta.class.php';
+	//$ArvoEvaste = new Evaste();
 		if ($arpa==17){
 			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='1'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
-		}if else ($arpa==18){
+		}if ($arpa==18){
 			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
