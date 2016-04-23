@@ -165,7 +165,7 @@ try{
 		var ratkaisu;
 		
         circle.addEventListener("click", function(event) { alert("clicked"); })
-		circle1.addEventListener("click", function() { ValittuLaake(vastaus, ratkaisu); })
+		//circle1.addEventListener("click", function() { ValittuLaake(vastaus, ratkaisu); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
 		circle4.addEventListener("click", function(event) { alert("clicked"); })
