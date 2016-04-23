@@ -165,7 +165,7 @@ try{
 		var ratkaisu;
 		
         circle.addEventListener("click", function(event) { alert("clicked"); })
-		//circle1.addEventListener("click", function() { ValittuLaake(vastaus, ratkaisu); })
+		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
 		circle4.addEventListener("click", function(event) { alert("clicked"); })
@@ -921,17 +921,4 @@ if ($arpa==2){
 				?>
 </div>
 </div>
-<script>
-/*
-		function ValittuLaake(Vastaus, Ratkaisu){
-			if (Vastaus == Ratkaisu){
-				window.location.replace("https://medgame.herokuapp.com/oikea.php")
-			}
-			else
-			{
-				window.location.replace("https://medgame.herokuapp.com/vaara.php")
-			}
-		}
-*/
-</script>
 </body></html>
