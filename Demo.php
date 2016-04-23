@@ -17,6 +17,12 @@ try{
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
+		}if ($arpa==18){
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+				$Ratkaisu = "{$row['Brand']}";
+				setcookie("tulos", $Ratkaisu);
+			} 
 		}
 ?>
 <!DOCTYPE html>
@@ -192,7 +198,7 @@ try{
 
 		circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos = getCookie("tulos")); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
-		circle2.addEventListener("click", function(event) { alert("clicked"); })
+		circle2.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos = getCookie("tulos")); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
 		circle4.addEventListener("click", function(event) { alert("clicked"); })
 		circle5.addEventListener("click", function(event) { alert("clicked"); })
@@ -619,6 +625,13 @@ if ($arpa==2){
 }if ($arpa==17){
         echo "The patient has a fever and he needs ibuprofen for 400mg.";
 		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='1'");
+		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+			$Ratkaisu = "{$row['Brand']}";
+			echo "<br> Vastaus: $Ratkaisu </p>";
+		} 
+}if ($arpa==18){
+        echo "Patient has a high fever. Patient is a child.";
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
