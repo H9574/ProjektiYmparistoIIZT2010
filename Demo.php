@@ -7,9 +7,303 @@ try{
 }
 ?>
 
+<div id="isodiv">
+<canvas id="demoCanvas" width="1388" height="694"></canvas>
+<!-- Tiedon hakeminen tietokannasta -->
+<!--div id="makkara" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+				/*
+					$stmt = $db->query("SELECT * 
+										FROM medicine");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+					*/
+				?>
+</div-->
+<div id="a" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='1'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+						$Annettu = {$row["Brand"]};
+						setcookie($Valinta, $Annettu);
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="b" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='2'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="c" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='3'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="d" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='4'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="e" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='5'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="f" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='6'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="g" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='7'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="h" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='8'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="i" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='9'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="j" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='10'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="k" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='11'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="l" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='12'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="m" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='13'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="n" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='14'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="o" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='15'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="p" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='16'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="q" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='17'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="r" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='18'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="s" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='19'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="t" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='20'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="u" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='21'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="v" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='22'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+<div id="x" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+					$stmt = $db->query("SELECT * 
+										FROM brand 
+										WHERE PrimaryKey='23'");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+				?>
+</div>
+</div>
+
 <!DOCTYPE html>
-<html>
-<head>
 <meta charset="UTF-8">
 <title>MedGame</title>
 <link rel="stylesheet" a href="stylesheet.css" type="text/css"/>
@@ -431,6 +725,8 @@ try{
         //stage.style.z-index = 0;
   }
 </script>
+<html>
+<head>
 </head>
 <body  onload="init();">
         <header class="mainheader">
@@ -656,300 +952,6 @@ if ($arpa==2){
 }
 ?>
 </content></article></div></div>
-
-<div id="isodiv">
-<canvas id="demoCanvas" width="1388" height="694"></canvas>
-<!-- Tiedon hakeminen tietokannasta -->
-<!--div id="makkara" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-				/*
-					$stmt = $db->query("SELECT * 
-										FROM medicine");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-					*/
-				?>
-</div-->
-<div id="a" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='1'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta, $Annettu);
-					}
-					echo "</table>";
-				?>
 </div>
-<div id="b" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='2'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="c" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='3'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="d" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='4'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="e" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='5'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="f" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='6'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="g" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='7'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="h" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='8'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="i" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='9'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="j" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='10'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="k" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='11'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="l" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='12'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="m" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='13'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="n" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='14'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="o" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='15'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="p" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='16'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="q" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='17'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="r" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='18'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="s" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='19'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="t" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='20'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="u" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='21'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="v" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='22'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-<div id="x" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='23'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-				?>
-</div>
-</div>
-</body></html>
+</body>
+</html>
