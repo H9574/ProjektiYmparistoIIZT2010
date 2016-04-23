@@ -5,7 +5,7 @@ try{
 	echo "ErrMsg to enduser!<hr>\n";
     echo "CatchErrMsg: " . $ex->getMessage() . "<hr>\n";
 }
-/*
+
 					//Evästeiden nimeäminen
 					$Valinta = "valinta";
 					$Valinta1 = "valinta1";
@@ -147,7 +147,7 @@ try{
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
 						setcookie($Valinta22, $Annettu);
-					}*/
+					}
 ?>
 <!DOCTYPE html>
 <html>
