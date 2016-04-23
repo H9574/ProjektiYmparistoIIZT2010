@@ -401,7 +401,7 @@ try{
         //d.style.z-index = 1;
         stage.style.position = "centered";
         //stage.style.z-index = 0;
-		
+  }
 </script>
 </head>
 <body  onload="init();">
