@@ -162,7 +162,7 @@ try{
 			}
 		*/
         circle.addEventListener("click", function(event) { window.location.replace("https://medgame.herokuapp.com/ValittuLaake.php"); })
-		circle1.addEventListener("click", function(event) { window.location.replace("https://medgame.herokuapp.com/ValittuLaake.php"); })
+		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
 		circle4.addEventListener("click", function(event) { alert("clicked"); })
@@ -184,6 +184,18 @@ try{
 		circle20.addEventListener("click", function(event) { alert("clicked"); })
 		circle21.addEventListener("click", function(event) { alert("clicked"); })
 		circle22.addEventListener("click", function(event) { alert("clicked"); })
+		
+		function ValittuLaake(){
+			Vastaus = Burana;
+			Ratkaisu = Burana;
+			if (Vastaus == Ratkaisu){
+				header("Location: oikea.php");
+			}
+			else
+			{
+				header("Location: vaara.php");
+			}
+		}
 		
         circle.addEventListener("mouseover", function(event) {a.style.opacity = 1; })
 		circle1.addEventListener("mouseover", function(event) {b.style.opacity = 1; })
