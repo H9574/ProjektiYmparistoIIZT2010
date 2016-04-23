@@ -922,6 +922,7 @@ if ($arpa==2){
 </div>
 </div>
 <script>
+/*
 		function ValittuLaake(Vastaus, Ratkaisu){
 			if (Vastaus == Ratkaisu){
 				window.location.replace("https://medgame.herokuapp.com/oikea.php")
@@ -931,5 +932,6 @@ if ($arpa==2){
 				window.location.replace("https://medgame.herokuapp.com/vaara.php")
 			}
 		}
+*/
 </script>
 </body></html>
