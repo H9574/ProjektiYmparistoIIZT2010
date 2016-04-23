@@ -161,7 +161,7 @@ try{
 			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 			}
 		*/
-        circle.addEventListener("click", function(event) { alert("klikattu Buranaa"); })
+        circle.addEventListener("click", function(event) { alert("<form action='vertaa.php' method='post'><input type='hidden' value='$Ratkaisu' name='ratkaisu'><input type='text' name='vastaus' placeholder='enter an answer as mg/ml' /><input type='submit' value='Give to the patient' /></form>"); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
