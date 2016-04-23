@@ -32,9 +32,9 @@ try{
 					$Valinta22 = "valinta22";
 					
 					//Evästeiden asetus
-					$yksi = $db->query("SELECT * FROM brand WHERE PrimaryKey='1'");
-					while($row = $yksi->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row['Brand']};
+					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='1'");
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						$Annettu = "{$row["Brand"]}";
 						setcookie($Valinta, $Annettu);
 					}/*
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='2'");
