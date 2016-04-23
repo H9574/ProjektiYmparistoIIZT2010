@@ -5,149 +5,8 @@ try{
 	echo "ErrMsg to enduser!<hr>\n";
     echo "CatchErrMsg: " . $ex->getMessage() . "<hr>\n";
 }
-					//Evästeiden nimeäminen
-					$Valinta = "valinta";
-					$Valinta1 = "valinta1";
-					$Valinta2 = "valinta2";
-					$Valinta3 = "valinta3";
-					$Valinta4 = "valinta4";
-					$Valinta5 = "valinta5";
-					$Valinta6 = "valinta6";
-					$Valinta7 = "valinta7";
-					$Valinta8 = "valinta8";
-					$Valinta9 = "valinta9";
-					$Valinta10 = "valinta10";
-					$Valinta11 = "valinta11";
-					$Valinta12 = "valinta12";
-					$Valinta13 = "valinta13";
-					$Valinta14 = "valinta14";
-					$Valinta15 = "valinta15";
-					$Valinta16 = "valinta16";
-					$Valinta17 = "valinta17";
-					$Valinta18 = "valinta18";
-					$Valinta19 = "valinta19";
-					$Valinta20 = "valinta20";
-					$Valinta21 = "valinta21";
-					$Valinta22 = "valinta22";
-					
-					
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='1'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='2'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta1, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta2, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='4'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta3, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='5'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta4, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='6'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta5, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='7'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta6, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='8'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta7, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='9'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta8, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='10'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta9, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='11'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta10, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='12'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta11, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='13'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta12, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='14'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta13, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='15'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta14, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='16'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta15, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='17'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta16, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='18'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta17, $Annettu);
-					}
-
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='19'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta18, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='20'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta19, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='21'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta20, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='22'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta21, $Annettu);
-					}
-					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='23'");
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						$Annettu = {$row["Brand"]};
-						setcookie($Valinta22, $Annettu);
-					}
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -159,6 +18,7 @@ try{
 
 <script>
   function init() {
+/*
 		function getCookie(cname) {
 		var name = cname + "=";
 		var ca = document.cookie.split(';');
@@ -172,10 +32,10 @@ try{
 			}
 			}
 			return "";
-		}
+		}*/
 		
-		var oppilas;
-		var tulos = getCookie("tulos");
+		var oppilas; //valintoja on monta joten siksi laitetaan menee jokainen yksitellen ja vältytään override ongelmalta
+		var tulos = getCookie("tulos"); // vain yksi eväste nimeltä tulos, koska tämä täyttyy vain yhden kerran
 		
 		function ValittuLaake(Vastaus, Ratkaisu){
 			if (Vastaus == Ratkaisu){
@@ -318,7 +178,17 @@ try{
         stage.addChild(circle22);
 		
         stage.enableMouseOver();
-
+		/*
+		//for looppi ei pelaa, koska toiminnallisuus tuhoutuu jos pallerot laittaa loopin sisään. Näkyy, mutta ei toimi.		
+		var laake, laakemaara, i;
+		laake = ["circle", "circle1", "circle2", "circle3", "circle4", "circle5", "circle6", "circle7", "circle8", "circle9", "circle10", "circle11", "circle12", "circle13", "circle14", "circle15", "circle16", "circle17", "circle18", "circle19", "circle20", "circle21", "circle22"];
+		laakemaara = laake.length;
+		for (i = 0; i < laakemaara; i++) {
+			laake[i].addEventListener("click", function(event) { alert("clicked"); })
+			laake[i].addEventListener("mouseover", function(event) {d.style.opacity = 1; })
+			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
+			}
+		*/
 		circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
@@ -530,39 +400,66 @@ try{
         x.style.left = "80px";
         x.style.top = "850px";
         x.style.opacity = 0;
-
+		/**/
+		
+		/*
+		var laake, laakemaara, i;
+		laake = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", 
+				"l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x"];
+		laakemaara = laake.length;
+		for (i = 0; i < laakemaara; i++) {
+			var laake[i] = document.getElementById(laake[i]);
+			laake[i].style.position = "absolute";
+			laake[i].style.left = "80px";
+			laake[i].style.top = "850px";
+			laake[i].style.opacity = 0;
+		}
+		
+        var d = document.getElementById('makkara');
+        d.style.position = "absolute";
+        d.style.left = "80px";
+        d.style.top = "850px";
+        d.style.opacity = 0;
+		*/
+        //d.style.z-index = 0;
+        //var z = document.getElementById('juusto');
+        //z.style.position = "absolute";
+        //z.style.left = "150px";
+        //z.style.top = "100px";
+        //d.style.z-index = 1;
         stage.style.position = "centered";
+        //stage.style.z-index = 0;
   }
 </script>
 </head>
 <body  onload="init();">
-<header class="mainheader">
-<div class="menu">
-<nav><ul>
-<li> <a href="#">Peli näkymä</a> </li>
-<li> <a href="ulos.php">Sign out</a> </li>
-</ul></nav></div>
-</header>
-<div class="mainContent">
-<div class="content">
-<article class="topcontent">
-<header>
-<h2>Team Hönö Demo game: MedGame</h2>
-</header>
-<content>
-<h3>Doctor needs the answer for the following question:</h3>
+        <header class="mainheader">
+        <div class="menu">
+        <nav><ul>
+        <li> <a href="#">Peli näkymä</a> </li>
+        <li> <a href="ulos.php">Sign out</a> </li>
+        </ul></nav></div>
+    </header>
+    <div class="mainContent">
+        <div class="content">
+                <article class="topcontent">
+                        <header>
+                        <h2>Team Hönö Demo game: MedGame</h2>
+                        </header><content >
+                        <h3>Doctor needs the answer for the following question:</h3>
 <?php
-   require_once 'Laskuja.class.php';
+require_once 'Laskuja.class.php';
 $arpa = 17;//rand(1, 17);
 $Vastaus = new Laskuja();
 $RoomaMuunnos = new Roomalaiset();
-	require_once 'TehtavanAnto.php';
-$Evaste = new Evaste();
 //Pysyviä muuttujia kaikkiin tehtäviin
 		$Aika = rand(1, 48);
         $Maksimi = rand(6, 14);
         $Minimi = 4;
 		$InfuusioNopeus = rand(4, $Maksimi);
+//Evästeen nimeäminen
+$tulos = "tulos";
+$Valinta = "valinta";
 		
 if ($arpa==1){
         $Ratkaisu = intval($Vastaus->LaskeAnnostusMaksimi($Maksimi, $Aika));
@@ -754,17 +651,28 @@ if ($arpa==2){
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
-			$Evaste->EvasteAsetus($Ratkaisu);
+			setcookie($tulos, $Ratkaisu);
 		} 
 }
 ?>
-</content>
-</article>
-</div>
-</div>
+</content></article></div></div>
 
 <div id="isodiv">
 <canvas id="demoCanvas" width="1388" height="694"></canvas>
+<!-- Tiedon hakeminen tietokannasta -->
+<!--div id="makkara" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
+                <?php
+				/*
+					$stmt = $db->query("SELECT * 
+										FROM medicine");
+					echo "<table>";
+					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+					}
+					echo "</table>";
+					*/
+				?>
+</div-->
 <div id="a" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
@@ -773,6 +681,8 @@ if ($arpa==2){
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+						$Annettu = {$row["Brand"]};
+						setcookie($Valinta, $Annettu);
 					}
 					echo "</table>";
 				?>
