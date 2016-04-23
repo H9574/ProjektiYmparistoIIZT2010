@@ -8,7 +8,8 @@ try{
 
 	//Evästeiden nimeäminen
 	$Valinta = "valinta";
-	$arpa = 17;//rand(1, 17);
+	
+	$arpa = rand(17, 18);
 	require_once 'TehtavanArvonta.class.php';
 	$ArvoEvaste = new Evaste();
 		if ($arpa==17){
@@ -17,7 +18,7 @@ try{
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
-		}if ($arpa==18){
+		}if else ($arpa==18){
 			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
@@ -36,8 +37,8 @@ try{
 
 <script>
   function init() {
-		//var oppilas;
-		//var tulos = getCookie("tulos");
+		var oppilas;
+		var tulos = getCookie("tulos");
 		
 		function ValittuLaake(Vastaus, Ratkaisu){
 			if (Vastaus == Ratkaisu){
@@ -196,9 +197,9 @@ try{
 		
         stage.enableMouseOver();
 
-		circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos = getCookie("tulos")); })
+		circle.addEventListener("click", function() { ValittuLaake(oppilas = "Burana", tulos); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
-		circle2.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos = getCookie("tulos")); })
+		circle2.addEventListener("click", function() { ValittuLaake(oppilas = "Panadol", tulos); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
 		circle4.addEventListener("click", function(event) { alert("clicked"); })
 		circle5.addEventListener("click", function(event) { alert("clicked"); })
