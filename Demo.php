@@ -161,7 +161,7 @@ try{
 			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 			}
 		*/
-        circle.addEventListener("click", function(event) { window.location.replace(oikea.php); })
+        circle.addEventListener("click", function(event) { location.replace("https://medgame.herokuapp.com/oikea.php"); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
