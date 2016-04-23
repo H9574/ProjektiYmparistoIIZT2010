@@ -188,15 +188,6 @@ try{
 		circle21.addEventListener("click", function(event) { alert("clicked"); })
 		circle22.addEventListener("click", function(event) { alert("clicked"); })
 		
-		function ValittuLaake(Vastaus, Ratkaisu){
-			if (Vastaus == Ratkaisu){
-				window.location.replace("https://medgame.herokuapp.com/oikea.php")
-			}
-			else
-			{
-				window.location.replace("https://medgame.herokuapp.com/vaara.php")
-			}
-		}
 		
         circle.addEventListener("mouseover", function(event) {a.style.opacity = 1; })
 		circle1.addEventListener("mouseover", function(event) {b.style.opacity = 1; })
@@ -930,4 +921,15 @@ if ($arpa==2){
 				?>
 </div>
 </div>
+<script>
+		function ValittuLaake(Vastaus, Ratkaisu){
+			if (Vastaus == Ratkaisu){
+				window.location.replace("https://medgame.herokuapp.com/oikea.php")
+			}
+			else
+			{
+				window.location.replace("https://medgame.herokuapp.com/vaara.php")
+			}
+		}
+</script>
 </body></html>
