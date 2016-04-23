@@ -161,8 +161,8 @@ try{
 			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 			}
 		*/
-        circle.addEventListener("click", function(event) { alert("<button onclick='myFunction()'>400mg</button>"); })
-		circle1.addEventListener("click", function(event) { alert("clicked"); })
+        circle.addEventListener("click", function(event) { window.location.replace("https://medgame.herokuapp.com/ValittuLaake.php"); })
+		circle1.addEventListener("click", function(event) { TarkistaLaake(Burana, Burana); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
 		circle4.addEventListener("click", function(event) { alert("clicked"); })
@@ -400,7 +400,17 @@ try{
         //d.style.z-index = 1;
         stage.style.position = "centered";
         //stage.style.z-index = 0;
-}
+		
+		function myFunction($Vastaus, $Ratkaisu) {
+			if ($Vastaus == $Ratkaisu){
+				location.replace("https://medgame.herokuapp.com/oikea.php")
+			}
+			else
+			{
+				location.replace("https://medgame.herokuapp.com/vaara.php")
+			}
+		}
+		
 </script>
 </head>
 <body  onload="init();">
