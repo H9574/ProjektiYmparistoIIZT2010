@@ -162,7 +162,7 @@ try{
 			}
 		*/
         circle.addEventListener("click", function(event) { window.location.replace("https://medgame.herokuapp.com/ValittuLaake.php"); })
-		circle1.addEventListener("click", function(event) { TarkistaLaake(Burana, Burana); })
+		circle1.addEventListener("click", function(event) { TarkistaLaake(); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
 		circle4.addEventListener("click", function(event) { alert("clicked"); })
@@ -401,14 +401,17 @@ try{
         stage.style.position = "centered";
         //stage.style.z-index = 0;
 		
-		function TarkistaLaake($Vastaus, $Ratkaisu) {
+		function TarkistaLaake() {
+			/*
 			if ($Vastaus == $Ratkaisu){
-				location.replace("https://medgame.herokuapp.com/oikea.php")
+				location.replace("https://medgame.herokuapp.com/oikea.php");
 			}
 			else
 			{
-				location.replace("https://medgame.herokuapp.com/vaara.php")
+				location.replace("https://medgame.herokuapp.com/vaara.php");
 			}
+			*/
+			location.replace("https://medgame.herokuapp.com/vaara.php");
 		}
 		
 </script>
