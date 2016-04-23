@@ -35,119 +35,119 @@ try{
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='1'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta, $Annettu);
-					}
+						setcookie($Valinta, $Annettu);
+					}/*
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='2'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta1, $Annettu);
+						setcookie($Valinta1, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta2, $Annettu);
+						setcookie($Valinta2, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='4'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta3, $Annettu);
+						setcookie($Valinta3, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='5'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta4, $Annettu);
+						setcookie($Valinta4, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='6'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta5, $Annettu);
+						setcookie($Valinta5, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='7'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta6, $Annettu);
+						setcookie($Valinta6, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='8'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta7, $Annettu);
+						setcookie($Valinta7, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='9'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta8, $Annettu);
+						setcookie($Valinta8, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='10'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta9, $Annettu);
+						setcookie($Valinta9, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='11'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta10, $Annettu);
+						setcookie($Valinta10, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='12'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta11, $Annettu);
+						setcookie($Valinta11, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='13'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta12, $Annettu);
+						setcookie($Valinta12, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='14'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta13, $Annettu);
+						setcookie($Valinta13, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='15'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta14, $Annettu);
+						setcookie($Valinta14, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='16'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta15, $Annettu);
+						setcookie($Valinta15, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='17'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta16, $Annettu);
+						setcookie($Valinta16, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='18'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta17, $Annettu);
+						setcookie($Valinta17, $Annettu);
 					}
 
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='19'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta18, $Annettu);
+						setcookie($Valinta18, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='20'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta19, $Annettu);
+						setcookie($Valinta19, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='21'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta20, $Annettu);
+						setcookie($Valinta20, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='22'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta21, $Annettu);
+						setcookie($Valinta21, $Annettu);
 					}
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='23'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
-						//setcookie($Valinta22, $Annettu);
-					}
+						setcookie($Valinta22, $Annettu);
+					}*/
 ?>
 <!DOCTYPE html>
 <html>
