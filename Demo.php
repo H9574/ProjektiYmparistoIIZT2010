@@ -320,7 +320,7 @@ try{
 		
         stage.enableMouseOver();
 
-		circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos = getCookie(tulos)); })
+		circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos = getCookie("tulos")); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
@@ -554,7 +554,7 @@ try{
 <h3>Doctor needs the answer for the following question:</h3>
 <?php
    require_once 'Laskuja.class.php';
-$arpa = rand(1, 17);
+$arpa = 17;//rand(1, 17);
 $Vastaus = new Laskuja();
 $RoomaMuunnos = new Roomalaiset();
 	require_once 'TehtavanArvonta.php';
