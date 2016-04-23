@@ -161,9 +161,6 @@ try{
 			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 			}
 		*/
-		var vastaus;
-		var ratkaisu;
-		
         circle.addEventListener("click", function(event) { alert("clicked"); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
