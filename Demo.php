@@ -401,19 +401,6 @@ try{
         stage.style.position = "centered";
         //stage.style.z-index = 0;
 		
-		function TarkistaLaake() {
-			/*
-			if ($Vastaus == $Ratkaisu){
-				location.replace("https://medgame.herokuapp.com/oikea.php");
-			}
-			else
-			{
-				location.replace("https://medgame.herokuapp.com/vaara.php");
-			}
-			*/
-			location.replace("https://medgame.herokuapp.com/vaara.php");
-		}
-		
 </script>
 </head>
 <body  onload="init();">
