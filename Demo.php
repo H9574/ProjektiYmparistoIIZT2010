@@ -401,7 +401,7 @@ try{
         stage.style.position = "centered";
         //stage.style.z-index = 0;
 		
-		function myFunction($Vastaus, $Ratkaisu) {
+		function TarkistaLaake($Vastaus, $Ratkaisu) {
 			if ($Vastaus == $Ratkaisu){
 				location.replace("https://medgame.herokuapp.com/oikea.php")
 			}
