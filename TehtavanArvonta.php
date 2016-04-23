@@ -8,9 +8,8 @@ $RoomaMuunnos = new Roomalaiset();
         $Maksimi = rand(6, 14);
         $Minimi = 4;
 		$InfuusioNopeus = rand(4, $Maksimi);
-//Evästeen nimeäminen
+		//Evästeen nimeäminen
 $tulos = "tulos";
-$Valinta = "valinta";
 		
 if ($arpa==1){
         $Ratkaisu = intval($Vastaus->LaskeAnnostusMaksimi($Maksimi, $Aika));
