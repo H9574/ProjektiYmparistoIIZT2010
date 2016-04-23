@@ -161,8 +161,11 @@ try{
 			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 			}
 		*/
-        circle.addEventListener("click", function(event) { window.location.replace("https://medgame.herokuapp.com/ValittuLaake.php"); })
-		circle1.addEventListener("click", function(event) { alert("clicked"); })
+		var vastaus;
+		var ratkaisu;
+		
+        circle.addEventListener("click", function(event) { alert("clicked"); })
+		circle1.addEventListener("click", function() { ValittuLaake(vastaus, ratkaisu); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
 		circle4.addEventListener("click", function(event) { alert("clicked"); })
@@ -185,15 +188,13 @@ try{
 		circle21.addEventListener("click", function(event) { alert("clicked"); })
 		circle22.addEventListener("click", function(event) { alert("clicked"); })
 		
-		function ValittuLaake(){
-			Vastaus = Burana;
-			Ratkaisu = Burana;
+		function ValittuLaake(Vastaus, Ratkaisu){
 			if (Vastaus == Ratkaisu){
-				header("Location: oikea.php");
+				window.location.replace("https://medgame.herokuapp.com/oikea.php")
 			}
 			else
 			{
-				header("Location: vaara.php");
+				window.location.replace("https://medgame.herokuapp.com/vaara.php")
 			}
 		}
 		
