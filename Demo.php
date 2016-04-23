@@ -7,7 +7,7 @@ try{
 }
 
 					//Evästeiden nimeäminen
-					$Valinta = "valinta";
+					$Valinta = "valinta";/*
 					$Valinta1 = "valinta1";
 					$Valinta2 = "valinta2";
 					$Valinta3 = "valinta3";
@@ -147,7 +147,7 @@ try{
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = "{$row["Brand"]}";
 						setcookie($Valinta22, $Annettu);
-					}
+					}*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -557,6 +557,8 @@ try{
 $arpa = rand(1, 17);
 $Vastaus = new Laskuja();
 $RoomaMuunnos = new Roomalaiset();
+	require_once 'TehtavanArvonta.php';
+	$ArvoEvaste = new Evaste();
 //Pysyviä muuttujia kaikkiin tehtäviin
 		$Aika = rand(1, 48);
         $Maksimi = rand(6, 14);
@@ -753,6 +755,7 @@ if ($arpa==2){
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
+			$ArvoEvaste->EvasteAsetus($Ratkaisu);
 		} 
 }
 ?>
