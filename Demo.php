@@ -5,9 +5,6 @@ try{
 	echo "ErrMsg to enduser!<hr>\n";
     echo "CatchErrMsg: " . $ex->getMessage() . "<hr>\n";
 }
-//Evästeen nimeäminen
-$tulos = "tulos";
-$Valinta = "valinta";
 ?>
 
 <!DOCTYPE html>
@@ -21,9 +18,7 @@ $Valinta = "valinta";
 
 <script>
   function init() {
-		var oppilas; //valintoja on monta joten siksi laitetaan menee jokainen yksitellen ja vältytään override ongelmalta
-		var tulos = getCookie("tulos"); // vain yksi eväste nimeltä tulos, koska tämä täyttyy vain yhden kerran
-		
+
 		function getCookie(cname) {
 		var name = cname + "=";
 		var ca = document.cookie.split(';');
@@ -35,13 +30,14 @@ $Valinta = "valinta";
 			if (c.indexOf(name) == 0) {
 				return c.substring(name.length, c.length);
 			}
+			}
+			return "";
 		}
-		return "";
-	}
 		
-		function ValittuLaake(Oppilas, Tulos){
-			Vastaus = Oppilas;
-			Ratkaisu = Tulos;
+		var oppilas; //valintoja on monta joten siksi laitetaan menee jokainen yksitellen ja vältytään override ongelmalta
+		var tulos = getCookie("tulos"); // vain yksi eväste nimeltä tulos, koska tämä täyttyy vain yhden kerran
+		
+		function ValittuLaake(Vastaus, Ratkaisu){
 			if (Vastaus == Ratkaisu){
 				location.replace("https://medgame.herokuapp.com/oikea.php")
 			} else
@@ -461,6 +457,9 @@ $RoomaMuunnos = new Roomalaiset();
         $Maksimi = rand(6, 14);
         $Minimi = 4;
 		$InfuusioNopeus = rand(4, $Maksimi);
+//Evästeen nimeäminen
+$tulos = "tulos";
+$Valinta = "valinta";
 		
 if ($arpa==1){
         $Ratkaisu = intval($Vastaus->LaskeAnnostusMaksimi($Maksimi, $Aika));
