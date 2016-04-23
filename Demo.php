@@ -421,7 +421,7 @@ try{
                         <h3>Doctor needs the answer for the following question:</h3>
 <?php
 require_once 'Laskuja.class.php';
-$arpa = 17;//rand(1, 17);
+$arpa = rand(1, 16);
 $Vastaus = new Laskuja();
 $RoomaMuunnos = new Roomalaiset();
 //Pysyviä muuttujia kaikkiin tehtäviin
@@ -614,14 +614,14 @@ if ($arpa==2){
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
 			<input type='text' name='vastaus' placeholder='enter an answer as Roman numerals' />
 			<input type='submit' value='Give to the patient' /></form>";
-}if ($arpa==17){
+}/*if ($arpa==17){
         echo "The patient has a fever and he needs ibuprofen for 400mg.";
 		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='1'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
-}
+}*/
 ?>
 </content></article></div></div>
 
