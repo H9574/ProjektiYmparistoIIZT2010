@@ -18,6 +18,19 @@ try{
 
 <script>
   function init() {
+		var vastaus;
+		var ratkaisu;
+		
+		function ValittuLaake(Vastaus, Ratkaisu){
+			if (Vastaus == Ratkaisu){
+				location.replace("https://medgame.herokuapp.com/oikea.php")
+			}
+			else
+			{
+				location.replace("https://medgame.herokuapp.com/vaara.php")
+			}
+		}
+	  
 		var stage = new createjs.Stage("demoCanvas");
         createjs.Ticker.addEventListener("tick", handleTick);
         function handleTick(event) {
@@ -161,7 +174,7 @@ try{
 			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 			}
 		*/
-        circle.addEventListener("click", function(event) { alert("clicked"); })
+		circle.addEventListener("click", function() { ValittuLaake(vastaus="Burana", ratkaisu="Burana"); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
