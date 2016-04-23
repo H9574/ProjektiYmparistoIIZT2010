@@ -304,6 +304,8 @@ try{
 </div>
 
 <!DOCTYPE html>
+<html>
+<head>
 <meta charset="UTF-8">
 <title>MedGame</title>
 <link rel="stylesheet" a href="stylesheet.css" type="text/css"/>
@@ -725,8 +727,6 @@ try{
         //stage.style.z-index = 0;
   }
 </script>
-<html>
-<head>
 </head>
 <body  onload="init();">
         <header class="mainheader">
