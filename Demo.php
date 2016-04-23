@@ -320,7 +320,7 @@ try{
 		
         stage.enableMouseOver();
 
-		circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos="Burana"); })
+		circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
