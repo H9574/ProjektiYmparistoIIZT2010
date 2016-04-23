@@ -557,7 +557,7 @@ try{
 $arpa = 17;//rand(1, 17);
 $Vastaus = new Laskuja();
 $RoomaMuunnos = new Roomalaiset();
-	require_once 'TehtavanArvonta.php';
+	require_once 'TehtavanArvonta.class.php';
 	$ArvoEvaste = new Evaste();
 //Pysyviä muuttujia kaikkiin tehtäviin
 		$Aika = rand(1, 48);
