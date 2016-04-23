@@ -18,7 +18,7 @@ try{
 
 <script>
   function init() {
-
+/*
 		function getCookie(cname) {
 		var name = cname + "=";
 		var ca = document.cookie.split(';');
@@ -32,7 +32,7 @@ try{
 			}
 			}
 			return "";
-		}
+		}*/
 		
 		var oppilas; //valintoja on monta joten siksi laitetaan menee jokainen yksitellen ja vältytään override ongelmalta
 		var tulos = getCookie("tulos"); // vain yksi eväste nimeltä tulos, koska tämä täyttyy vain yhden kerran
