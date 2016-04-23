@@ -5,6 +5,9 @@ try{
 	echo "ErrMsg to enduser!<hr>\n";
     echo "CatchErrMsg: " . $ex->getMessage() . "<hr>\n";
 }
+//Evästeen nimeäminen
+$tulos = "tulos";
+$Valinta = "valinta";
 ?>
 
 <!DOCTYPE html>
@@ -18,14 +21,30 @@ try{
 
 <script>
   function init() {
-		var vastaus;
-		var ratkaisu;
+		var oppilas; //valintoja on monta joten siksi laitetaan menee jokainen yksitellen ja vältytään override ongelmalta
+		var tulos = getCookie("tulos"); // vain yksi eväste nimeltä tulos, koska tämä täyttyy vain yhden kerran
 		
-		function ValittuLaake(Vastaus, Ratkaisu){
+		function getCookie(cname) {
+		var name = cname + "=";
+		var ca = document.cookie.split(';');
+		for(var i=0; i<ca.length; i++) {
+			var c = ca[i];
+			while (c.charAt(0)==' ') {
+				c = c.substring(1);
+			}
+			if (c.indexOf(name) == 0) {
+				return c.substring(name.length, c.length);
+			}
+		}
+		return "";
+	}
+		
+		function ValittuLaake(Oppilas, Tulos){
+			Vastaus = Oppilas;
+			Ratkaisu = Tulos;
 			if (Vastaus == Ratkaisu){
 				location.replace("https://medgame.herokuapp.com/oikea.php")
-			}
-			else
+			} else
 			{
 				location.replace("https://medgame.herokuapp.com/vaara.php")
 			}
@@ -174,7 +193,7 @@ try{
 			laake[i].addEventListener("mouseout", function(event) {d.style.opacity = 0; })
 			}
 		*/
-		circle.addEventListener("click", function() { ValittuLaake(vastaus="Burana", ratkaisu="Burana"); })
+		circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
@@ -434,7 +453,7 @@ try{
                         <h3>Doctor needs the answer for the following question:</h3>
 <?php
 require_once 'Laskuja.class.php';
-$arpa = rand(1, 16);
+$arpa = 17;//rand(1, 17);
 $Vastaus = new Laskuja();
 $RoomaMuunnos = new Roomalaiset();
 //Pysyviä muuttujia kaikkiin tehtäviin
@@ -627,14 +646,15 @@ if ($arpa==2){
 			<input type='hidden' value='$Ratkaisu' name='ratkaisu'>
 			<input type='text' name='vastaus' placeholder='enter an answer as Roman numerals' />
 			<input type='submit' value='Give to the patient' /></form>";
-}/*if ($arpa==17){
+}if ($arpa==17){
         echo "The patient has a fever and he needs ibuprofen for 400mg.";
 		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='1'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
+			setcookie($tulos, $Ratkaisu);
 		} 
-}*/
+}
 ?>
 </content></article></div></div>
 
@@ -662,6 +682,8 @@ if ($arpa==2){
 					echo "<table>";
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
+						$Annettu = {$row["Brand"]};
+						setcookie($Valinta, $Annettu);
 					}
 					echo "</table>";
 				?>
