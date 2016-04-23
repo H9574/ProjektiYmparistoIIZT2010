@@ -171,7 +171,7 @@ try{
 				location.replace("https://medgame.herokuapp.com/vaara.php")
 			}
 		}
-		/*
+		
 		function getCookie(cname) {
 		var name = cname + "=";
 		var ca = document.cookie.split(';');
@@ -186,7 +186,7 @@ try{
 			}
 			return "";
 		}
-	  */
+	  
 		var stage = new createjs.Stage("demoCanvas");
         createjs.Ticker.addEventListener("tick", handleTick);
         function handleTick(event) {
