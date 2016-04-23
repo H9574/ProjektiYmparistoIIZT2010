@@ -30,7 +30,7 @@ try{
 					$Valinta21 = "valinta21";
 					$Valinta22 = "valinta22";
 					
-					
+					//Evästeiden asetus
 					$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='1'");
 					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 						$Annettu = {$row["Brand"]};
@@ -319,7 +319,7 @@ try{
 		
         stage.enableMouseOver();
 
-		circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos); })
+		circle.addEventListener("click", function() { ValittuLaake(oppilas = getCookie("valinta"), tulos="Burana"); })
 		circle1.addEventListener("click", function(event) { alert("clicked"); })
 		circle2.addEventListener("click", function(event) { alert("clicked"); })
 		circle3.addEventListener("click", function(event) { alert("clicked"); })
@@ -556,7 +556,7 @@ try{
 $arpa = 17;//rand(1, 17);
 $Vastaus = new Laskuja();
 $RoomaMuunnos = new Roomalaiset();
-	require_once 'TehtavanAnto.php';
+	require_once 'TehtavanArvonta.php';
 $Evaste = new Evaste();
 //Pysyviä muuttujia kaikkiin tehtäviin
 		$Aika = rand(1, 48);
@@ -754,7 +754,6 @@ if ($arpa==2){
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
-			$Evaste->EvasteAsetus($Ratkaisu);
 		} 
 }
 ?>
