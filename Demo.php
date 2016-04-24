@@ -9,7 +9,7 @@ try{
 	//Evästeiden nimeäminen
 	$Valinta = "valinta";
 	
-	$arpa = rand(1, 42);
+	$arpa = rand(1, 41);
 		if ($arpa==17){
 			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='1'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -23,7 +23,7 @@ try{
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==19){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='1'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
@@ -35,137 +35,131 @@ try{
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==21){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='4'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==22){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='5'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==23){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='6'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==24){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='7'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==25){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='8'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==26){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='8'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==27){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='9'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==28){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='10'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==29){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='11'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==30){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='12'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==31){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='13'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==32){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='14'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==33){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='15'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==34){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='16'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==35){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='17'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==36){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='18'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==37){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='19'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==38){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='20'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==39){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='21'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==40){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='22'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
 		}if ($arpa==41){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='23'");
 			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 				$Ratkaisu = "{$row['Brand']}";
 				setcookie("tulos", $Ratkaisu);
 			} 
-		}if ($arpa==42){
-			$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
-			while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-				$Ratkaisu = "{$row['Brand']}";
-				setcookie("tulos", $Ratkaisu);
-			}
 		}
 ?>
 <!DOCTYPE html>
@@ -790,7 +784,7 @@ if ($arpa==2){
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
-}if ($arpa==20){
+}if ($arpa==20){ //meillä ei ollut panadol dortea, joten ajattelin että panadol olisi tarpeeksi lähellä
         echo "Patient has a fever and muscle aches. Patient is an adult. ";
 		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -799,159 +793,160 @@ if ($arpa==2){
 		} 
 }if ($arpa==21){
         echo "Patient needs medicine for the treatment of deep vein thrombosis. ";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='4'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==22){
         echo "Patient needs medicine for preventative treatment of complications from thromboembolism. He is affected by atrial fibrillation. ";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='5'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==23){
         echo "Patien has an urinary track infection. He needs medicine containing the active substance pivmecillinam.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='6'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==24){
         echo "Patient needs medicine for an urinary track infection. He needs medicine containing the active substance trimetoprim.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='7'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==25){
         echo "Patient has clearly brinchitis. Bring me suitable medicine for it.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='8'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==26){
         echo "Patient has an inflammation of the middle ear. Bring suitable medicine for me. Its active subtance is amoxicillin.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='8'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==27){
         echo "Patient has pharyngitis caused by streptococcus. Bring me medicine.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='9'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==28){
         echo "Patiant has  type 2 diabetes mellitus. Bring me medicine containing the active substance metformin.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='10'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==29){
         echo "Patient has exercise-induced asthma and needs suitable medication.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='11'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==30){
         echo "Bring me respiratory medicine containing fluticasone/salmeterol as its active substance.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='12'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==31){
         echo "Patient has rheumatoid arthritis.  Bring suitable medicine.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='13'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==32){
         echo "Patient has thyroid dysfunction. Bring a suitable hormonal product for him.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='14'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==33){
         echo "Patient has high cholesterol. Bring suitable medicine.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='15'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==34){
         echo "Patient has allergic rhinitis in spring. Bring respinatory medicine for me. Its active subtanse is ";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='16'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==35){
         echo "Patient has pain caused by cancer. Bring me medicine containing the active subtance oxycodone.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='17'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==36){
         echo "Patient has diabetes. Bring medicine with insulin glargine as its active subtance.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='18'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==37){
         echo "Bring medicine for a reflux disease. Its active substance is esomeprazole.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='19'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==38){
         echo "Bring medicine for high blood pressure. Active substance is lisinopril.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='20'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==39){
         echo "Bring medicine for high blood pressure. Active substance is furosemide.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='21'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==40){
         echo "Patient is pregnant with her first child and her blood pressure raised suddenly. Bring medicine containing active substance nifedipine. ";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='22'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
 }if ($arpa==41){
         echo "Patient is pregnant with her first child and her blood pressure raised suddenly. Bring medicine containing active substance labelatol.";
-		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
+		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='23'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
-}if ($arpa==42){
+}/*Tämä lääke puuttui listoilta 
+if ($arpa==42){
         echo "Patient has gone into labor prematurely. Quickly! Bring medicine!!!";
 		$stmt = $db->query("SELECT * FROM brand WHERE PrimaryKey='3'");
 		while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
 			$Ratkaisu = "{$row['Brand']}";
 			echo "<br> Vastaus: $Ratkaisu </p>";
 		} 
-}
+}*/
 ?>
 </content>
 </article>
