@@ -967,20 +967,7 @@ if ($arpa==42){
 					echo "</table>";
 				?>
 </div>
-<div id="b" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
-                <?php
-					/*
-					$stmt = $db->query("SELECT * 
-										FROM brand 
-										WHERE PrimaryKey='2'");
-					echo "<table>";
-					while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-						echo "<tr><td>{$row['Brand']}</td><td>{$row['Dosage']}</td><tr>\n";
-					}
-					echo "</table>";
-					*/
-				?>
-</div>
+
 <div id="c" style="width:300px;height:200px;border:1px solid #000;background-color: #03a8f9;">
                 <?php
 					$stmt = $db->query("SELECT * 
